@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: relative;
+  background-color: $secondary__pink;
+  color: #fff;
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    span {
+      display: block;
+      line-height: 14px;
+      font-size: 14px;
+    }
+  }
+  nav {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding: 24px;
+    margin: auto;
+    width: 100%;
+    background: #ccc;
+    display: none;
+    &.js-menuNav__active {display: block;}
+  }
+}
+
+.headerBtn{
+  position: absolute;
+  right: 3%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  transition: all .4s;
+  &__open {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    transition: all .4s;
+    &:before, span,&:after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 1.5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: all .4s;
+    }
+    &:before {top: 18px;}
+    &:after {bottom: 18px;}
+  }
+}
+
+
+
+.headerBtn__open:before {animation: menu-bar02 .75s forwards;}
+@keyframes menu-bar02 {
+  0% {transform: translateY(-9px) rotate(45deg);}
+  50% {transform: translateY(-9px) rotate(0);}
+  100% {transform: translateY(0) rotate(0);}
+}
+.headerBtn__open span {transition: all .25s .25s;opacity: 1;}
+.headerBtn__open:after {animation: menu-bar01 .75s forwards;}
+@keyframes menu-bar01 {
+  0% {transform: translateY(9px) rotate(-45deg);}
+  50% {transform: translateY(9px) rotate(0);}
+  100% {transform: translateY(0) rotate(0);}
+}
+
+
+.headerBtn__open.js-headerBtn__active:before {animation: active-menu-bar03 .75s forwards;}
+@keyframes active-menu-bar03 {
+  0% {transform: translateY(0) rotate(0);}
+  50% {transform: translateY(-9px) rotate(0);}
+  100% {transform: translateY(-9px) rotate(-45deg);}
+}
+.headerBtn__open.js-headerBtn__active span {opacity: 0;}
+.headerBtn__open.js-headerBtn__active:after {animation: active-menu-bar01 .75s forwards;}
+@keyframes active-menu-bar01 {
+  0% {transform: translateY(0) rotate(0);}
+  50% {transform: translateY(9px) rotate(0);}
+  100% {transform: translateY(9px) rotate(45deg);}
+}

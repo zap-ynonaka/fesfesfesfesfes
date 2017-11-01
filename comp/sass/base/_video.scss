@@ -1,0 +1,21 @@
+video {
+  width: 100%;
+  vertical-align: top;
+}
+
+.videoArea{
+  position: relative;
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(228, 0, 127, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  img {
+    width: 70%;
+  }
+}

@@ -1,0 +1,68 @@
+.contentsArea {
+  &__time {
+    margin: 10px auto;
+    overflow: hidden;
+    span {
+      flex: 1;
+      width: 50%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 31px;
+      letter-spacing: 1px;
+      &:nth-of-type(1) {
+        font-size: 21px;
+        background-color: $secondary__pink;
+        color: $base__white;
+        font-weight: 700;
+        padding: 0 0 2px;
+      }
+      &:nth-of-type(2) {
+        background-color: $base__white;
+        border: 1px solid $secondary__pink;
+        color: $secondary__pink;
+        font-size: 14px;
+        flex-wrap: wrap;
+        font-weight: 700;
+      }
+    }
+  }
+  &__guide {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    li {
+      width: 50%;
+    }
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 42px;
+      font-size: 14px;
+      color: #585858;
+      font-weight: 700;
+      padding-left: 28px;
+      background-image: url(../asset/dummy/top-chedule_icon01.png);
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: 26px;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #8cc63f;
+        border-right: 2px solid #8cc63f;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 2%;
+        margin: auto;
+      }
+    }
+  }
+}
