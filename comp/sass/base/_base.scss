@@ -57,6 +57,7 @@ section {
   &.pattern_01, &.pattern_02 {
     &.scheduleArea { background-image: url(../asset/dummy/corner-top_01.png),url(../asset/dummy/corner-bottom.png); }
     &.newsArea { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
+    &.eventReport { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
     > div {padding-left: $sectionPaddingLeftRight_base;padding-right: $sectionPaddingLeftRight_base;}
   }
   h2 {

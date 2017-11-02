@@ -1,0 +1,25 @@
+.eventReport{
+  ul{
+    display:flex;
+    justify-content:space-around;
+  }
+  &__Inquiry{
+    a{
+      display:block;
+      text-decoration: underline;
+      color:$primary__green;
+      text-align: center;
+      margin:1em 0em;
+      font-size: 14px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
