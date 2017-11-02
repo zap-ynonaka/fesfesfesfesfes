@@ -1,0 +1,55 @@
+section.pattern_02.snsShareArea {
+  padding: 0px;
+}
+
+.snsShareArea{
+  &__group {
+     display: flex;
+     margin-top: 16px;
+     margin-bottom: 30px;
+ }
+ 
+ &__item {
+     flex: 1 1 100%;
+     align-items: center;
+ }
+ 
+ &__item:not(:last-child) {
+     margin-right: 8px;
+ }
+ 
+ &__twitter {
+     background-color: #1da1f2;
+     background-image: url(/asset/dummy/tw_icon.png);
+     background-size: 24px 20px;
+ }
+ 
+ &__facebook {
+     background-color: #3b5998;
+     background-image: url(/asset/dummy/fb_icon.png);
+     background-size: 22px 23px;
+ }
+ 
+ &__line {
+     background-color: #00b900;
+     background-image: url(/asset/dummy/line_icon.png);
+     background-size: 24px 23px;
+ }
+ 
+ &__facebook, &__line, &__twitter {
+     height: 32px;
+     display: block;
+     color: #fff;
+     line-height: 32px;
+     font-size: .625rem;
+     border-radius: 2px;
+     text-indent: 30px;
+     text-align: center;
+     background-repeat: no-repeat;
+     background-position: 10%;
+ }
+ 
+ }
+ 
+ 
+ 

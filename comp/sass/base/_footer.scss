@@ -1,0 +1,57 @@
+footer{
+  text-align: center;
+  h4{
+    font-size: 18px;
+    color: #141414;
+    padding-bottom: 1em;
+  }
+  .footer{
+    &__links{
+      padding:0px 16px;
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        li a {
+          display:block;
+        img{padding-bottom: 0.5em;}
+        }
+      }
+    }
+
+    &__followUsIcon{
+      padding:0px 16px;
+    ul{
+      display: flex;
+      justify-content:space-around;
+      margin: 1em;
+    }
+    p{
+      border-bottom: dotted 3px #666666;
+      padding-top: 1em;
+      margin-bottom: 1em;
+    }
+    }
+
+    &__comment{
+      padding:1em;
+      p{
+        color: #141414;
+        font-size: 10px;
+      }
+    }
+
+    &__copyRight {
+      line-height: 40px;
+      background:$secondary__pink;
+      color:$base__white;
+      font-size: 12px;
+      font-weight: 700;
+  }
+
+
+
+
+  }
+}
+  //これがfooterの閉じタグ！
