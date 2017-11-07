@@ -10584,17 +10584,23 @@ return deferred;
 // ここまでjqueryみぐれーと
 
 // 作業追加ここから
-// video読み込まれたら再生
-(function() {
-  var v = document.getElementsByTagName("video")[0];
-  v.play();
-})
 
 //　クリックしたらメニューとメニュー内容表示
+
 $(function(){
+
+  var v = document.getElementsByTagName("video")[0];
+  v.play();
+
   $('.headerBtn').on('click', function(){
     var target = '.headerBtn > div';
+    $(target).addClass('js-headerBtn__action');
     $(target).toggleClass('js-headerBtn__active');
     $('header nav').toggleClass('js-menuNav__active');
   });
+});
+
+$(window).on('resize', function(){
+  var navPosition = $('.container').width() - 50;
+  $('.headerBtn').css('left', navPosition);
 });
