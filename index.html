@@ -31,11 +31,13 @@
   -->
 </head>
 <body>
+<div class="container">
   <header>
     <h1><span>累計総動員数18,000人</span>日本最大級の占いイベント</h1>
+
     <div class="headerBtn">
       <div class="headerBtn__open">
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </div>
     <nav>
@@ -46,8 +48,13 @@
         <li><a href="/">メニュー的な</a></li>
       </ul>
     </nav>
+    <script>
+      var navPosition = $('.container').width() - 50;
+      $('.headerBtn').css('left', navPosition);
+    </script>
   </header>
-  <main>
+
+  <main class="container">
     <section>
       <div class="videoArea top">
         <video loop>
@@ -55,18 +62,14 @@
           <a href="asset/move/top.mp4">動画を再生</a>
         </video>
         <div class="videoArea__logo">
-          <img src="/asset/img/top-logo.png" alt="">
+          <img src="/wp-content/uploads/2017/11/top_logo.png" alt="">
         </div>
       </div>
     </section>
 
     <section class="pattern_01 scheduleArea">
       <div class="top">
-        <img src="asset/dummy/top-schedule.png" alt="">
-        <p class="scheduleArea__time">
-          <span>11:00〜20:00</span>
-          <span>最終日は19:00まで</span>
-        </p>
+        <img src="/wp-content/uploads/2017/11/top_schedule.png" alt="">
         <ul class="scheduleArea__guide">
           <li><a href="#">アクセス</a></li>
           <li><a href="#">会場マップ</a></li>
@@ -233,8 +236,9 @@
   </footer>
 
     <script>
-      
+
     </script>
   </main>
+  </div>
 </body>
 </html>

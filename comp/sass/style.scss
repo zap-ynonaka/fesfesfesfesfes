@@ -8,3 +8,12 @@
 @import "base/_snsShareArea";
 @import "base/_eventReport";
 @import "base/_footer";
+
+
+
+@media screen and (min-width: 751px) {
+  .container {
+    width: 840px;
+    margin: 0 auto;
+  }
+}
