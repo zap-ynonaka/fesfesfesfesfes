@@ -59,18 +59,19 @@ $sectionPaddingLeftRight_base: 16px;
 
 section {
   &.pattern_01 {
-    padding: $sectionPaddingTopBottom_base + 30px 0 $sectionPaddingTopBottom_base;
+    // padding: $sectionPaddingTopBottom_base + 30px 0 $sectionPaddingTopBottom_base;
     background-repeat: no-repeat,no-repeat;
     background-size: 100%, 100%;
     background-position: 0px 0%,-1px 100%;background-color: #fff;
   }
   &.pattern_02 {
-    padding: $sectionPaddingTopBottom_base 0;
+    // padding: $sectionPaddingTopBottom_base 0;
   }
   &.pattern_01, &.pattern_02 {
-    &.scheduleArea { background-image: url(../asset/dummy/corner-top_01.png),url(../asset/dummy/corner-bottom.png); }
-    &.newsArea { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
-    &.eventReport { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
+   h2{padding-left: 0px;}
+    // &.scheduleArea { background-image: url(../asset/dummy/corner-top_01.png),url(../asset/dummy/corner-bottom.png); }
+    // &.newsArea { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
+    // &.eventReport { background-image: url(../asset/dummy/corner-top_02.png),url(../asset/dummy/corner-bottom.png); }
     > div {padding-left: $sectionPaddingLeftRight_base;padding-right: $sectionPaddingLeftRight_base;}
   }
   h2 {
@@ -87,4 +88,150 @@ section {
       letter-spacing: 2px;
     }
   }
+  .deco1{
+  &.decoTop{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #f4f4f4;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -3px;
+      width: 100%;
+      height: 40px;
+      background-color: #e4007d;
+      -webkit-transform: rotate(5deg);
+      transform: rotate(2deg);
+      z-index: 4;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      border: 370px solid transparent;
+      background-color: #FFF;
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-4deg);
+      z-index: 6;
+    }
+  }
+}
+
+.deco1{
+  &.decoBottom{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #FFF;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -3px;
+      width: 100%;
+      height: 40px;
+      background-color: #f4f4f4;
+      -webkit-transform: rotate(5deg);
+      transform: rotate(6deg);
+      z-index: 6;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      border: 370px solid transparent;
+      background-color: #e4007d;
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-4deg);
+      z-index: 4;
+    }
+  }
+}
+
+.deco2{
+  &.decoTop{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #FFF;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 0px;
+      width: 100%;
+      height: 40px;
+      background-color: #e4007d;
+      -webkit-transform: rotate(5deg);
+      transform: rotate(-4deg);
+      z-index: 4;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: -12px;
+      right: 0px;
+      width: 100%;
+      height: 40px;
+      border: 370px solid #f4f4f4;
+      background-color: #FFF;
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(5deg);
+      z-index: 6;
+    }
+  }
+}
+
+.deco2{
+  &.decoBottom{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #FFF;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: -20px;
+      left: 4px;
+      width: 100%;
+      height: 40px;
+      background-color: #f4f4f4;
+      -webkit-transform: rotate(5deg);
+      transform: rotate(6deg);
+      z-index: 6;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 9px;
+      right: 0px;
+      width: 100%;
+      height: 40px;
+      border: 370px solid transparent;
+      background-color: #e4007d;
+      transform: rotate(-4deg);
+      z-index: 4;
+    }
+  }
+}
+
+
+  
+    
 }
