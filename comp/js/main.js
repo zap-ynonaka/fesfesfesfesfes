@@ -10597,6 +10597,7 @@ $(function(){
     $(target).addClass('js-headerBtn__action');
     $(target).toggleClass('js-headerBtn__active');
     $('header nav').toggleClass('js-menuNav__active');
+    $('header nav').css('width', $('.container').width() );
   });
 });
 
