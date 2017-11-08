@@ -38,6 +38,7 @@
     li {
       width: 50%;
     }
+    li:nth-child(2) a {background-image: url(/wp-content/uploads/2017/11/ico_faq.png);}
     a {
       display: flex;
       justify-content: flex-start;
@@ -85,19 +86,19 @@
   
   &__twitter {
       background-color: #1da1f2;
-      background-image: url(/asset/dummy/tw_icon.png);
+      background-image: url(/wp-content/uploads/2017/11/share-twitter.png);
       background-size: 24px 20px;
   }
   
   &__facebook {
       background-color: #3b5998;
-      background-image: url(/asset/dummy/fb_icon.png);
+      background-image: url(/wp-content/uploads/2017/11/share-fb.png);
       background-size: 22px 23px;
   }
   
   &__line {
       background-color: #00b900;
-      background-image: url(/asset/dummy/line_icon.png);
+      background-image: url(/wp-content/uploads/2017/11/share-line.png);
       background-size: 24px 23px;
   }
   
