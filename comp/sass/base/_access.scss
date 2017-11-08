@@ -24,7 +24,7 @@
       padding:0.8em 0em;
     }
     }
-    &__addressLink{
+  &__addressLink{
     text-align:right;
     padding-top:0.8em;
       a{
@@ -54,7 +54,7 @@
       font-size: 12px;
       padding: 0.8em 0em;      
     }
-    }
+  }
   &__byVehicle{
     text-align:left;
     font-size: 13px;
@@ -65,5 +65,13 @@
     font-weight:700;
     color:$secondary__pink;
     padding: 0.8em 0em;
+  }
+  &__car{
+    p:last-of-type{
+      color: #585858;
+      font-size: 12px;
+      padding: 0.8em 0em;
+      text-align:right;
+    }
   }
 }
