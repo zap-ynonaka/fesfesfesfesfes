@@ -2,6 +2,10 @@
 ul{
     display:flex;
     justify-content:space-around;
+  li{
+    flex: 1;
+    padding: 6px;
+  }
 }
 &__img{
       border: 1px solid #979797;
