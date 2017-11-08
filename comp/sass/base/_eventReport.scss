@@ -2,7 +2,31 @@
   ul{
     display:flex;
     justify-content:space-around;
-  }
+}
+    &__img{
+      border: 1px solid #979797;
+      border-bottom:none;
+      a{
+        display:block;
+        font-size: 13px;
+        color: #1e0111;
+      }
+    }
+    &__report{
+      border: 1px solid #979797;
+      &::before{
+        width: 10px;
+        height: 10px;
+        border: 80px solid transparent;
+        border-top: 80px solid #f00;
+      }
+      a{
+        color: #1e0111;
+        font-size: 13px;
+        display:block;
+      }
+    }
+
   &__Inquiry{
     a{
       display:block;

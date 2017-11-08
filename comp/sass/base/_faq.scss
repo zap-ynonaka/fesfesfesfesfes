@@ -1,0 +1,31 @@
+.faq{
+  &__title{
+    font-size: 15px;
+    font-weight:700;
+    color:$secondary__pink;
+    padding: 0.8em 0em;
+  }
+  ul{
+    li{
+      border-bottom: 1px solid #eeeeee;
+      padding: 0.5em 0;
+    &:last-child{
+        border:none;
+    }
+      p{
+        color: #1e0111;
+        font-size: 12px;
+        padding: 0.5em 0em;
+        line-height: 24px;
+        display: flex;
+        img{
+          width:26px;
+          height:26px;
+          margin-right:2%;
+
+        }      
+      }
+    }
+  }
+
+}
