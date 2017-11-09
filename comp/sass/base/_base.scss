@@ -88,148 +88,137 @@ section {
       letter-spacing: 2px;
     }
   }
+
   .deco1{
-  &.decoTop{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #f4f4f4;
-    position: relative;
-    &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: -3px;
+    &.decoTop{
       width: 100%;
       height: 40px;
-      background-color: #e4007d;
-      -webkit-transform: rotate(5deg);
-      transform: rotate(2deg);
-      z-index: 4;
+      overflow: hidden;
+      background-color: #f4f4f4;
+      position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          top: -4px;
+          left: 0px;
+          width: 850px;
+          height: 80px;
+          background-color: #FFF;
+          transform: rotate(-6deg);
+          z-index: 6;
+        }
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 27px;
+          left: 0px;
+          width: 850px;
+          height: 80px;
+          background-color: #e4007d;
+          transform: rotate(0deg);
+          z-index: 4;
+        }
     }
-    &:before{
-      content: "";
-      position: absolute;
-      top: -8px;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      border: 370px solid transparent;
-      background-color: #FFF;
-      -webkit-transform: rotate(-5deg);
-      transform: rotate(-4deg);
-      z-index: 6;
-    }
-  }
-}
 
-.deco1{
-  &.decoBottom{
+    &.decoBottom{
     width: 100%;
     height: 40px;
     overflow: hidden;
     background: #FFF;
     position: relative;
-    &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: -3px;
-      width: 100%;
-      height: 40px;
-      background-color: #f4f4f4;
-      -webkit-transform: rotate(5deg);
-      transform: rotate(6deg);
-      z-index: 6;
+        &:before{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 40px;
+          left: -11px;
+          width: 850px;
+          height: 80px;
+          background-color: #f4f4f4;
+          transform: rotate(5deg);
+          z-index: 6;
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          top: 29px;
+          right: 0px;
+          width: 850px;
+          height: 80px;
+          background-color: #e4007d;
+          transform: rotate(0deg);
+          z-index: 4;
+        }
     }
-    &:before{
-      content: "";
-      position: absolute;
-      top: 9px;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      border: 370px solid transparent;
-      background-color: #e4007d;
-      -webkit-transform: rotate(-5deg);
-      transform: rotate(-4deg);
-      z-index: 4;
-    }
-  }
+    
 }
 
 .deco2{
-  &.decoTop{
+    &.decoTop{
     width: 100%;
     height: 40px;
     overflow: hidden;
     background: #FFF;
     position: relative;
-    &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 30px;
-      right: 0px;
-      width: 100%;
-      height: 40px;
-      background-color: #e4007d;
-      -webkit-transform: rotate(5deg);
-      transform: rotate(-4deg);
-      z-index: 4;
+        &:before{
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0px;
+        width: 850px;
+        height: 80px;
+        background-color: #f4f4f4;
+        transform: rotate(6deg);
+        z-index: 6;
+        }
+        &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -26px;
+        left: 0px;
+        width: 850px;
+        height: 80px;
+        background-color: #e4007d;
+        transform: rotate(0deg);
+        z-index: 4;
+        }
     }
-    &:before{
-      content: "";
-      position: absolute;
-      top: -12px;
-      right: 0px;
-      width: 100%;
-      height: 40px;
-      border: 370px solid #f4f4f4;
-      background-color: #FFF;
-      -webkit-transform: rotate(-5deg);
-      transform: rotate(5deg);
-      z-index: 6;
+
+    &.decoBottom{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #FFF;
+    position: relative;
+        &:before{
+        content: "";
+        position: absolute;
+        bottom: -45px;
+        left: -5px;
+        width: 850px;
+        height: 80px;
+        background-color: #f4f4f4;
+        transform: rotate(6deg);
+        z-index: 6;
+        }
+        &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 27px;
+        right: 0px;
+        width: 850px;
+        height: 80px;
+        background-color: #e4007d;
+        transform: rotate(0deg);
+        z-index: 4;
+        }
     }
-  }
 }
 
-.deco2{
-  &.decoBottom{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
-    &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: -20px;
-      left: 4px;
-      width: 100%;
-      height: 40px;
-      background-color: #f4f4f4;
-      -webkit-transform: rotate(5deg);
-      transform: rotate(6deg);
-      z-index: 6;
-    }
-    &:before{
-      content: "";
-      position: absolute;
-      bottom: 9px;
-      right: 0px;
-      width: 100%;
-      height: 40px;
-      border: 370px solid transparent;
-      background-color: #e4007d;
-      transform: rotate(-4deg);
-      z-index: 4;
-    }
-  }
-}
+
 
 
   
