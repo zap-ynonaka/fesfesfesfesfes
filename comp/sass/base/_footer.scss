@@ -1,38 +1,39 @@
 footer{
   text-align: center;
-  h4{
+  h4 {
     font-size: 18px;
     color: #141414;
     padding-bottom: 1em;
   }
-  .footer{
+  .footer {
     &__links{
       padding:0px 16px;
       ul {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        li a {
-          display:block;
-        img{padding-bottom: 0.5em;}
+        li {
+          width: 32%;
+          a {
+            display:block;
+            img{padding-bottom: 0.5em;}
+          }
         }
       }
     }
-
     &__followUsIcon{
-      padding:0px 16px;
-    ul{
-      display: flex;
-      justify-content:space-around;
-      margin: 1em;
+      padding:0px 16px 24px;
+      ul {
+        display: flex;
+        justify-content:space-around;
+        margin: 1em;
+      }
+      p {
+        border-bottom: dotted 3px #666666;
+        padding-top: 1em;
+        margin-bottom: 1em;
+      }
     }
-    p{
-      border-bottom: dotted 3px #666666;
-      padding-top: 1em;
-      margin-bottom: 1em;
-    }
-    }
-
     &__comment{
       padding:1em;
       p{
@@ -47,11 +48,7 @@ footer{
       color:$base__white;
       font-size: 12px;
       font-weight: 700;
-  }
-
-
-
-
+    }
   }
 }
   //これがfooterの閉じタグ！
