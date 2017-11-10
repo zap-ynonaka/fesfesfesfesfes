@@ -32,7 +32,7 @@
 </head>
 <body>
 <div class="container">
-  <header>
+  <header class="fes_2018">
     <h1><span>累計総動員数18,000人</span>日本最大級の占いイベント</h1>
 
     <div class="headerBtn">
@@ -49,8 +49,8 @@
       </ul>
     </nav>
     <script>
-      var navPosition = $('.container').width() - 50;
-      $('.headerBtn').css('left', navPosition);
+      var navPosi = document.getElementsByTagName('header')[0].scrollWidth - 50;
+      document.getElementsByClassName('headerBtn')[0].style.left = navPosi + 'px';
     </script>
   </header>
 
@@ -66,7 +66,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="pattern_01 scheduleArea">
       <div class="deco1 decoTop"></div>
       <div class="top">
@@ -95,7 +95,7 @@
       </div>
       <div class="deco1 decoBottom"></div>
     </section>
-  
+
     <section class="pattern_02 reflectionArea">
       <div class="top">
         <h2><img src="/wp-content/uploads/2017/11/tit-movie.png" alt=""><span>ムービー</span></h2>
@@ -107,8 +107,8 @@
         </div>
       </div>
     </section>
-        
-      <section class="pattern_01 eventReport">
+
+    <section class="pattern_01 eventReport">
       <div class="deco2 decoTop"></div>
         <div class="top">
             <h2><img src="/wp-content/uploads/2017/11/tit-history.png" alt=""><span>過去のイベントの様子</span></h2>
@@ -123,7 +123,7 @@
                 <div class="eventReport__imgWrap">
                   <p class="eventReport__img"><a href="https://cocoloni.jp/love/780571/"><img src="/wp-content/uploads/2017/11/logo-2017-summer-1.png" alt=""></a></p>
                   <p class="eventReport__report"><a>イベントリポート</a></p>
-                </div>                 
+                </div>
               </li>
             </ul>
             <div class="eventReport__Inquiry">
@@ -133,10 +133,10 @@
               </a>
             </div>
         </div>
-        <div class="deco2 decoBottom"></div>
+        <div class="deco1 decoBottom"></div>
       </section>
 
-  <section class="pattern_02 access"> 
+  <section class="pattern_02 access">
       <div class="top">
         <h2><img src="/wp-content/uploads/2017/11/tit-access.png" alt=""><span>アクセス</span></h2>
         <div class="access__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.671522521974!2d139.72706001525827!3d35.660463780199116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b771049dc33%3A0x5bfe0248594cc802!2z5YWt5pys5pyo44OS44Or44K6!5e0!3m2!1sja!2sjp!4v1510021929483" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-  </section>
+      </section>
 
       <section class="pattern_01 faq">
       <div class="deco2 decoTop"></div>
@@ -186,7 +186,7 @@
           <ul>
             <li>
               <p><img src="/wp-content/uploads/2017/11/ico_faq.png" alt=""><span>入場料や占いは料金がかかりますか？</span></p>
-              <p><img src="/wp-content/uploads/2017/11/ico_ans.png" alt=""><span>入場は無料です。占いは500円/回です。</span></p>    
+              <p><img src="/wp-content/uploads/2017/11/ico_ans.png" alt=""><span>入場は無料です。占いは500円/回です。</span></p>
             </li>
             <li>
               <p><img src="/wp-content/uploads/2017/11/ico_faq.png" alt=""><span>来場事前登録は有料ですか？なにができますか？</span></p>
@@ -220,6 +220,14 @@
 
 
   </main>
+
+
+<style type="text/css">
+
+.breadcrumb {
+    display: none;
+}
+</style>
 
   <footer>
     <div class="footer__followUsIcon">

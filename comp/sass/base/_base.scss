@@ -105,120 +105,102 @@ section {
       z-index: 4;
     }
     &:before {
-      top: 0px;
       left: 0px;
-      transform: rotate(-6deg);
     }
     &:after {
-      top: 0px;
-      right: 0px;
+      right: -1px;
       background-color: #e4007d;
-      transform: rotate(6deg);
+    }
+    &.deco1 {
+      &:before {
+        top: -5px;
+        transform: rotate(-6deg);
+      }
+      &:after {
+        top: 20px;
+        transform: rotate(1deg);
+        z-index: 2;
+      }
+    }
+    &.deco2 {
+      background-color: #e4007d;
+      &:before {
+        top: -35px;
+        transform: rotate(6deg);
+        background-color: #f4f4f4;
+      }
+      &:after {
+        top: 24px;
+        transform: rotate(-3deg);
+        z-index: 2;
+        background-color: #fff;
+      }
     }
   }
-
-  .deco1{
-
-    &.decoBottom{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
-        &:before{
-          content: "";
-          display: block;
-          position: absolute;
-          top: 40px;
-          left: -11px;
-          width: 850px;
-          height: 80px;
-          background-color: #f4f4f4;
-          transform: rotate(5deg);
-          z-index: 6;
-        }
-        &:after{
-          content: "";
-          position: absolute;
-          top: 29px;
-          right: 0px;
-          width: 850px;
-          height: 80px;
-          background-color: #e4007d;
-          transform: rotate(0deg);
-          z-index: 4;
-        }
-    }
-    
-}
-
-.deco2{
-    &.decoTop{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
-        &:before{
-        content: "";
-        position: absolute;
-        bottom: -6px;
-        left: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #f4f4f4;
-        transform: rotate(6deg);
-        z-index: 6;
-        }
-        &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        top: -26px;
-        left: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #e4007d;
-        transform: rotate(0deg);
-        z-index: 4;
-        }
-    }
-
-    &.decoBottom{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
-        &:before{
-        content: "";
-        position: absolute;
-        bottom: -45px;
-        left: -5px;
-        width: 850px;
-        height: 80px;
-        background-color: #f4f4f4;
-        transform: rotate(6deg);
-        z-index: 6;
-        }
-        &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        top: 27px;
-        right: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #e4007d;
-        transform: rotate(0deg);
-        z-index: 4;
-        }
-    }
-}
-
-
-
-
   
-    
+  .decoBottom {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;    
+    &:before, &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 850px;
+      height: 80px;
+      background-color: #FFF;
+      z-index: 4;
+    }
+    &:before {
+      left: 0px;
+    }
+    &:after {
+      right: 0px;
+    }
+    &.deco1 {
+      &:before {
+        top: 16px;
+        transform: rotate(-3deg);
+        background-color: #e64b7d;
+      }
+      &:after {
+        top: 5px;
+        transform: rotate(4.5deg);
+        z-index: 6;
+        background-color: #f4f4f4;
+      }
+    }
+    &.deco2 {
+      &:before {
+        top: 16px;
+        transform: rotate(-3deg);
+        background-color: #e64b7d;
+      }
+      &:after {
+        top: 5px;
+        transform: rotate(3deg);
+        z-index: 6;
+        background-color: #f4f4f4;
+      }
+    }
+  }
+  @media screen and (min-width: 751px) {
+    .decoTop {
+      height: 60px;
+      &.deco1:before {top: 30px;transform: rotate(-3deg);}
+      &.deco1:after {top: 40px;}
+
+      &.deco2:before {top: -43px;transform: rotate(3deg);}
+    }
+    .decoBottom {
+      height: 60px;
+      &.deco1:before {top: 32px;transform: rotate(-2deg);}
+      &.deco1:after {top: 18px;transform: rotate(2deg);}
+
+      &.deco2:before {top: 32px;transform: rotate(-2deg);}
+      &.deco2:after {top: 18px;transform: rotate(2deg);}
+    }
+  }
 }
