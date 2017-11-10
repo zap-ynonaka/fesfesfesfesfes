@@ -89,6 +89,7 @@ section {
     }
   }
 
+
   .decoTop {
     width: 100%;
     height: 40px;
@@ -129,22 +130,24 @@ section {
           content: "";
           display: block;
           position: absolute;
-          top: 40px;
-          left: -11px;
+          top: -4px;
+          right: 0px;
           width: 850px;
           height: 80px;
           background-color: #f4f4f4;
-          transform: rotate(5deg);
+          -webkit-transform: rotate(5deg);
+          transform: rotate(6deg);
           z-index: 6;
         }
         &:after{
           content: "";
           position: absolute;
-          top: 29px;
+          top: 26px;
           right: 0px;
           width: 850px;
           height: 80px;
           background-color: #e4007d;
+          -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
           z-index: 4;
         }
@@ -154,66 +157,68 @@ section {
 
 .deco2{
     &.decoTop{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      background: #FFF;
+      position: relative;
         &:before{
-        content: "";
-        position: absolute;
-        bottom: -6px;
-        left: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #f4f4f4;
-        transform: rotate(6deg);
-        z-index: 6;
+          content: "";
+          position: absolute;
+          top: -36px;
+          left: 0px;
+          width: 850px;
+          height: 80px;
+          background-color: #f4f4f4;
+          transform: rotate(6deg);
+          z-index: 6;
         }
         &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        top: -26px;
-        left: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #e4007d;
-        transform: rotate(0deg);
-        z-index: 4;
+          content: "";
+          display: block;
+          position: absolute;
+          top: -66px;
+          right: 0px;
+          width: 850px;
+          height: 80px;
+          background-color: #e4007d;
+          transform: rotate(0deg);
+          z-index: 4;
         }
     }
 
     &.decoBottom{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    background: #FFF;
-    position: relative;
-        &:before{
-        content: "";
-        position: absolute;
-        bottom: -45px;
-        left: -5px;
-        width: 850px;
-        height: 80px;
-        background-color: #f4f4f4;
-        transform: rotate(6deg);
-        z-index: 6;
-        }
-        &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        top: 27px;
-        right: 0px;
-        width: 850px;
-        height: 80px;
-        background-color: #e4007d;
-        transform: rotate(0deg);
-        z-index: 4;
-        }
-    }
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      background: #FFF;
+      position: relative;
+          &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -4px;
+            right: 0px;
+            width: 850px;
+            height: 80px;
+            background-color: #f4f4f4;
+            -webkit-transform: rotate(5deg);
+            transform: rotate(6deg);
+            z-index: 6;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            top: 26px;
+            right: 0px;
+            width: 850px;
+            height: 80px;
+            background-color: #e4007d;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            z-index: 4;
+          }
+      }
 }
 
 
