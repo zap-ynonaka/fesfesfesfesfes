@@ -1,21 +1,21 @@
 * {margin: 0;padding: 0;list-style-type: none;box-sizing: border-box;text-decoration: none;}
 
-@font-face {
-  font-family: 'din_l';
-  src: url('DINbek-Light.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'din_l';
-  src: url('DINbek-Light.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'din_l';
-  src: url('DINbek-Light.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'din_l';
-  src: url('DINbek-Light.ttf') format('ttf');
-}
+// @font-face {
+//   font-family: 'din_l';
+//   src: url('DINbek-Light.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'din_l';
+//   src: url('DINbek-Light.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'din_l';
+//   src: url('DINbek-Light.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'din_l';
+//   src: url('DINbek-Light.ttf') format('ttf');
+// }
 
 
 body {
@@ -62,7 +62,7 @@ section {
     // padding: $sectionPaddingTopBottom_base + 30px 0 $sectionPaddingTopBottom_base;
     background-repeat: no-repeat,no-repeat;
     background-size: 100%, 100%;
-    background-position: 0px 0%,-1px 100%;background-color: #fff;
+    background-position: 0px 0%,-1px 100%;background-color: $base__white;
   }
   &.pattern_02 {
     // padding: $sectionPaddingTopBottom_base 0;
@@ -76,7 +76,7 @@ section {
   }
   h2 {
     text-align: center;
-    color: #e4007f;
+    color: $secondary__pink;
     font-size: 30px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -92,16 +92,17 @@ section {
   .decoTop {
     width: 100%;
     height: 40px;
+    margin: 21px 0;
     overflow: hidden;
     background-color: #f4f4f4;
-    position: relative;    
+    position: relative;
     &:before, &:after{
       content: "";
       display: block;
       position: absolute;
       width: 850px;
       height: 80px;
-      background-color: #FFF;
+      background-color: $base__white;
       z-index: 4;
     }
     &:before {
@@ -109,7 +110,7 @@ section {
     }
     &:after {
       right: -1px;
-      background-color: #e4007d;
+      background-color: $secondary__pink;
     }
     &.deco1 {
       &:before {
@@ -123,7 +124,7 @@ section {
       }
     }
     &.deco2 {
-      background-color: #e4007d;
+      background-color: $secondary__pink;
       &:before {
         top: -35px;
         transform: rotate(6deg);
@@ -133,24 +134,25 @@ section {
         top: 24px;
         transform: rotate(-3deg);
         z-index: 2;
-        background-color: #fff;
+        background-color: $base__white;
       }
     }
   }
-  
+
   .decoBottom {
     width: 100%;
     height: 40px;
+    margin: 21px 0;
     overflow: hidden;
-    background-color: #fff;
-    position: relative;    
+    background-color: $base__white;
+    position: relative;
     &:before, &:after{
       content: "";
       display: block;
       position: absolute;
       width: 850px;
       height: 80px;
-      background-color: #FFF;
+      background-color: $base__white;
       z-index: 4;
     }
     &:before {
@@ -161,9 +163,9 @@ section {
     }
     &.deco1 {
       &:before {
-        top: 16px;
+        top: 20px;
         transform: rotate(-3deg);
-        background-color: #e64b7d;
+        background-color: $secondary__pink;
       }
       &:after {
         top: 5px;
@@ -176,7 +178,7 @@ section {
       &:before {
         top: 16px;
         transform: rotate(-3deg);
-        background-color: #e64b7d;
+        background-color: $secondary__pink;
       }
       &:after {
         top: 5px;

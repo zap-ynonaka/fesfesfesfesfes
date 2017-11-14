@@ -1,44 +1,50 @@
 .eventReport{
-ul{
-    display:flex;
-    justify-content:space-around;
-  li{
-    flex: 1;
-    padding: 6px;
+  ul{
+      display:flex;
+      justify-content:space-around;
+    li{
+      flex: 1;
+      padding: 6px;
+    }
   }
-}
-&__img{
-      border: 1px solid #979797;
-      border-bottom:none;
-      a{
-        display:block;
-        font-size: 13px;
-        color: #1e0111;
-      }
-}
-&__report{
-      border: 1px solid #979797;
-      position:relative;
-      &::before{
-        content: "";
-        display: block;
-        position: absolute;
-        left: 1.2em;
-        top: 0;
-        bottom: 0;
-        border: 8px solid transparent;
-        border-top: 8px solid $secondary__pink;
-        transform: rotate(270deg);
-      }
-      a{
-        color: #1e0111;
-        font-size: 13px;
-        display: block;
-        padding: 0.6em 0.6em 0.6em 1.6em;
-      }
-}
+  &__img{
+    border: 1px solid #979797;
+    border-bottom:none;
+    a{
+      display:block;
+      font-size: 13px;
+      color: #1e0111;
+    }
+  }
+  &__report{
+    border: 1px solid #979797;
+    position:relative;
+    // &::before{
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left: 1.2em;
+    //   top: 0;
+    //   bottom: 0;
+    //   border: 8px solid transparent;
+    //   border-top: 8px solid $secondary__pink;
+    //   transform: rotate(270deg);
+    // }
+    a{
+      color: #1e0111;
+      font-size: 13px;
+      display: flex;
+      height: 37px;
+      align-items: center;
+      padding-left: 25px;
+      background-image: url(http://dev.uranaifes.com/wp-content/uploads/2017/11/arrow_pink.png);
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: 10px 50%;
+    }
+  }
 
-&__Inquiry{
+  &__Inquiry{
     a{
       display:block;
       text-decoration: underline;
@@ -47,7 +53,7 @@ ul{
       margin:1em 0em;
       font-size: 14px;
     }
-}
+  }
 
 
 
