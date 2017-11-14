@@ -13,13 +13,13 @@ footer{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        li {
-          width: 32%;
-          a {
-            display:block;
-            img{padding-bottom: 0.5em;}
+          li {width: 32%;
+            &:nth-child(2){display:none;}
+            a {
+              display:block;
+              img{padding-bottom: 0.5em;}
           }
-        }
+          }
       }
     }
     &__followUsIcon {

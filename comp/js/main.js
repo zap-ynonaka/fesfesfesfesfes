@@ -10590,8 +10590,18 @@ return deferred;
 
 $(function(){
 
+
   var v = document.getElementsByTagName("video")[0];
-  v.play();
+  
+  $('.reflectionArea__movie span').on('click',function(){
+    v.play();
+    v.setAttribute("controls", "controls");
+    $('.reflectionArea__movie img').css('display', 'none');
+    $(".reflectionArea__movie span").removeClass("reflectionArea__movieIcon");
+    v.onended = function(e) {
+      this.currentTime = 0;
+    }
+  });
 
   $('.videoArea__images ul').css('height', $('.videoArea__images img').width() * 0.666666 );
 

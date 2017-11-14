@@ -110,15 +110,17 @@
             <p>▼過去の占いフェスの様子はこちらから▼</p></div>
           <div class="deco1 decoBottom"></div>
         </section>
-    
         <section class="pattern_02 reflectionArea">
           <div class="top">
             <h2><img src="http://dev.uranaifes.com/wp-content/uploads/2017/11/tit-movie.png" alt=""><span>ムービー</span></h2>
-            <div>
-              <video controls>
-                <source src="asset/move/top.mp4" type="video/mp4">
-                <a href="asset/move/top.mp4">動画を再生</a>
-              </video>
+            <div class="reflectionArea__movie">
+              <span class="reflectionArea__movieIcon">
+                  <img src="/asset/img/movie-play.png" alt="">
+                <video>
+                  <source src="asset/move/top.mp4" type="video/mp4">
+                  <a href="asset/move/top.mp4">動画を再生</a>
+                </video>
+              </span>
             </div>
           </div>
         </section>
@@ -164,7 +166,7 @@
               <p>※会場へのお問合せはご遠慮ください</p>
               </div>
             </div>
-            <div class="access__byVehicle">
+            <div class="access__byVehicle" style="display:none;">
                 <div class="">
                   <div class="access__title">電車でのアクセス</div>
                   <p>東京メトロ&nbsp;日比谷線「六本木」駅&ensp;1C出口&ensp;徒歩0分（直結）</p>
@@ -250,6 +252,9 @@
   <footer>
     <div class="footer__followUsIcon">
       <h4>Follow us</h4>
+        <div class="footer__followUsCaption">
+           <img src="/wp-content/uploads/2017/11/tit_follow_caption.png">    
+        </div>
       <ul>
         <li><a href=""><img src="asset/dummy/footer-twitter.png" alt=""></a></li>
         <li><a href=""><img src="asset/dummy/footer-facebook.png" alt=""></a></li>
