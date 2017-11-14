@@ -10588,4 +10588,30 @@ return deferred;
 //　クリックしたらメニューとメニュー内容表示
 
 
+$(function(){
+
+  var v = document.getElementsByTagName("video")[0];
+  v.play();
+
+  $('.videoArea__images ul').css('height', $('.videoArea__images img').width() * 0.666666 );
+
+  $('.headerBtn').on('click', function(){
+    var target = '.headerBtn > div';
+    $(target).addClass('js-headerBtn__action');
+    $(target).toggleClass('js-headerBtn__active');
+    $('header nav').toggleClass('js-menuNav__active');
+    $('header nav').css('width', $('.container').width() );
+  });
+
+  var videoImages = $('.videoArea__images li');
+  $(videoImages).each(function(i){
+    $(this).delay(500 * i).addcss({opacity:1}, 1500);
+  });
+});
+
+$(window).on('resize', function(){
+  var navPosition = $('.container').width() - 50;
+  $('.headerBtn').css('left', navPosition);
+  $('.videoArea__images ul').css('height', $('.videoArea__images img').width() * 0.666666 );
+});
 

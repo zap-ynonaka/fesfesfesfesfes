@@ -5,6 +5,7 @@ video {
 
 .videoArea{
   position: relative;
+  overflow: hidden;
   &__logo {
     position: absolute;
     top: 0;
@@ -15,8 +16,39 @@ video {
     align-items: center;
     height: 100%;
     width: 100%;
+    z-index: 100;
   }
   img {
     width: 70%;
   }
 }
+
+.videoArea__images {
+  ul {
+    position: relative;
+  }
+  li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+    &.active {
+      animation: anime_in 0.5s;
+      opacity: 1;
+      z-index: 10;}
+  }
+  img {
+    width: 100%;
+  }
+}
+
+
+@keyframes anime_in {
+	0%	{ opacity: 0; }
+	100%{ opacity: 1; }
+}
+
+
+.reflectionArea {padding-bottom: 21px;}

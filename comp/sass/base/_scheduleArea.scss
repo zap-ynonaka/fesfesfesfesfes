@@ -71,49 +71,51 @@
   }
   &__group {
       display: flex;
-      margin-top: 16px;
+      margin-top: 28px;
       margin-bottom: 30px;
   }
-  
+
   &__item {
       flex: 1 1 100%;
       align-items: center;
   }
-  
+
   &__item:not(:last-child) {
       margin-right: 8px;
   }
-  
+
   &__twitter {
       background-color: #1da1f2;
       background-image: url(/wp-content/uploads/2017/11/share-twitter.png);
       background-size: 24px 20px;
   }
-  
+
   &__facebook {
       background-color: #3b5998;
       background-image: url(/wp-content/uploads/2017/11/share-fb.png);
       background-size: 22px 23px;
   }
-  
+
   &__line {
       background-color: #00b900;
       background-image: url(/wp-content/uploads/2017/11/share-line.png);
       background-size: 24px 23px;
   }
-  
+
   &__facebook, &__line, &__twitter {
       height: 32px;
       display: block;
       color: #fff;
       line-height: 32px;
-      font-size: .625rem;
+      font-size: 10px;
       border-radius: 2px;
       text-indent: 30px;
       text-align: center;
       background-repeat: no-repeat;
       background-position: 10%;
   }
+
+  .decoTop {margin-top: 0;margin-bottom: 10px;}
 }
 
 

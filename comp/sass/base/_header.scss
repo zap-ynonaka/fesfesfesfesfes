@@ -6,6 +6,7 @@ header {
   position: relative;
   background-color: $secondary__pink;
   color: #fff;
+  margin-bottom: 0;
   h1 {
     font-size: 18px;
     text-align: center;
@@ -67,7 +68,7 @@ header {
       transition: all .4s;
       &:first-child {top: 18px;}
       &:nth-of-type(2){top: 0px;}
-      &:last-child {bottom: 18px;}      
+      &:last-child {bottom: 18px;}
     }
   }
 }
