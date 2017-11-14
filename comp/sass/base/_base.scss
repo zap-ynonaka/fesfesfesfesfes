@@ -89,7 +89,6 @@ section {
     }
   }
 
-
   .decoTop {
     width: 100%;
     height: 40px;
@@ -139,7 +138,6 @@ section {
       }
     }
   }
-
 
   .decoBottom {
     width: 100%;
@@ -195,6 +193,7 @@ section {
       height: 60px;
       &.deco1:before {top: 30px;transform: rotate(-3deg);}
       &.deco1:after {top: 40px;}
+
       &.deco2:before {top: -43px;transform: rotate(3deg);}
     }
     .decoBottom {
