@@ -1,9 +1,10 @@
 footer{
   text-align: center;
+  background: #f4f4f4;
   h4 {
     font-size: 18px;
     color: #141414;
-    padding-bottom: 1em;
+    margin-bottom: 14px;
   }
   .footer {
     &__links{
@@ -12,16 +13,16 @@ footer{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        li {
-          width: 32%;
-          a {
-            display:block;
-            img{padding-bottom: 0.5em;}
+          li {width: 32%;
+            &:nth-child(2){display:none;}
+            a {
+              display:block;
+              img{padding-bottom: 0.5em;}
           }
-        }
+          }
       }
     }
-    &__followUsIcon{
+    &__followUsIcon {
       padding:0px 16px 24px;
       ul {
         display: flex;
@@ -34,7 +35,10 @@ footer{
         margin-bottom: 1em;
       }
     }
-    &__comment{
+    &__followUsCaption {
+      margin-bottom: 14px;
+    }
+    &__comment {
       padding:1em;
       p{
         color: #141414;
