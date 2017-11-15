@@ -12,14 +12,15 @@ footer{
       ul {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-          li {width: 32%;
-            &:nth-child(2){display:none;}
-            a {
-              display:block;
-              img{padding-bottom: 0.5em;}
+        justify-content: flex-start;
+        li {width: 31%;
+          margin-right: 2%;
+          &:nth-child(2){display:none;}
+          a {
+            display:block;
+            img{padding-bottom: 0.5em;}
           }
-          }
+        }
       }
     }
     &__followUsIcon {

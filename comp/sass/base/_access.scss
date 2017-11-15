@@ -29,25 +29,31 @@
     padding-top:0.8em;
       a{
         text-decoration: underline;
-        color:$primary__green;
+        color: #8cc63f;
         font-size: 14px;
+        line-height: 20px;
         letter-spacing: 1.1px;
         position: relative;
-        padding-right: 0.8em;
-        &:after{
-          content: "";
-          display: block;
-          width: 5px;
-          height: 5px;
-          border-top: 2px solid #8cc63f;
-          border-right: 2px solid #8cc63f;
-          transform: rotate(45deg);
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0%;
-          margin: auto;
-        }
+        padding-right: 20px;
+        background-image: url(/wp-content/uploads/2017/11/arrow_green.png);
+        background-size: 13px;
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        font-weight: 700;
+        // &:after{
+        //   content: "";
+        //   display: block;
+        //   width: 5px;
+        //   height: 5px;
+        //   border-top: 2px solid #8cc63f;
+        //   border-right: 2px solid #8cc63f;
+        //   transform: rotate(45deg);
+        //   position: absolute;
+        //   top: 0;
+        //   bottom: 0;
+        //   right: 0%;
+        //   margin: auto;
+        // }
       }
     p{
       color: #585858;
