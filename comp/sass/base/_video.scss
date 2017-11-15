@@ -10,16 +10,15 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(228, 0, 127, 0.5);
+    right: 0;
+    bottom: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 90%;
     z-index: 100;
-  }
-  img {
-    width: 70%;
   }
 }
 

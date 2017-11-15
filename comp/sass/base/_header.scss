@@ -11,10 +11,12 @@ header {
     font-size: 18px;
     text-align: center;
     letter-spacing: 2px;
+    margin: 0;
     span {
       display: block;
       line-height: 14px;
       font-size: 14px;
+      padding-top: 5px;
     }
   }
   nav {

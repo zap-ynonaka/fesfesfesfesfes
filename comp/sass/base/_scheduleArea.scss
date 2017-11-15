@@ -87,19 +87,19 @@
   &__twitter {
       background-color: #1da1f2;
       background-image: url(/wp-content/uploads/2017/11/share-twitter.png);
-      background-size: 24px 20px;
+      background-size: 24px;
   }
 
   &__facebook {
       background-color: #3b5998;
       background-image: url(/wp-content/uploads/2017/11/share-fb.png);
-      background-size: 22px 23px;
+      background-size: 24px;
   }
 
   &__line {
       background-color: #00b900;
       background-image: url(/wp-content/uploads/2017/11/share-line.png);
-      background-size: 24px 23px;
+      background-size: 24px;
   }
 
   &__facebook, &__line, &__twitter {
@@ -116,6 +116,13 @@
   }
 
   .decoTop {margin-top: 0;margin-bottom: 10px;}
+
+  @media screen and (max-width: 320px) {
+    &__twitter,&__facebook,&__line {
+      background-size: 16px;
+      text-indent: 23px;
+    }
+  }
 }
 
 
