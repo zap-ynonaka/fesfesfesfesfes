@@ -1,0 +1,28 @@
+.secondBase{
+  &_title{
+    padding-top: 24px;
+  }
+  &_fes_2018{
+    background:#FFF;
+    display: flex;
+  h1{
+    display: flex;
+    padding-right: 50px;
+    width: 100%;
+  }
+  }
+  &_headerImg{
+    // flex: 1;
+    // flex:4;
+  }
+  &_headerTitle{
+    flex: 4;
+    position: relative;
+    img{
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
