@@ -1,13 +1,14 @@
-.eventReport{
-  ul{
-      display:flex;
-      justify-content:space-around;
-    li{
-      flex: 1;
-      padding: 6px;
+.eventReport {
+  ul {
+    margin-top: 31px;
+    display:flex;
+    justify-content:space-between;
+    li {
+      width: 47%;
+      background-color: #fff;
     }
   }
-  &__img{
+  &__img {
     border: 1px solid #979797;
     border-bottom:none;
     a{
@@ -16,7 +17,7 @@
       color: #1e0111;
     }
   }
-  &__report{
+  &__report {
     border: 1px solid #979797;
     position:relative;
     // &::before{
@@ -30,7 +31,7 @@
     //   border-top: 8px solid $secondary__pink;
     //   transform: rotate(270deg);
     // }
-    a{
+    a {
       color: #1e0111;
       font-size: 13px;
       display: flex;
@@ -45,8 +46,8 @@
     }
   }
 
-  &__Inquiry{
-    a{
+  &__Inquiry {
+    a {
       display:block;
       text-decoration: underline;
       color:$primary__green;

@@ -1,34 +1,41 @@
-.reflectionArea{
-&__movie{
-  position: relative;
-  img{
+.reflectionArea {
+  &__movie{
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 22%;
+      z-index: 20;
+    }
+  }
+  &__movieIcon {
+    display: block;
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 22%;
-    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
   }
-}
-&__movieIcon{
-  display: block;
-  filter: brightness(80%);
-}
 
-video::-internal-media-controls-download-button {
-  display:none;
- }
+  video::-internal-media-controls-download-button {
+    display:none;
+  }
 
- video::-webkit-media-controls-enclosure {
-  overflow:hidden;
- }
+  video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+  }
 
- video::-webkit-media-controls-panel {
-  width: calc(100% + 30px); /* Adjust as needed */
- }
+  video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+  }
 
 
 
