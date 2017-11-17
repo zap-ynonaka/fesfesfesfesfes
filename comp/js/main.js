@@ -10614,9 +10614,8 @@ $(function(){
   });
 
 
-  setInterval('topImageActive()', 3000);
-  setInterval('topImageActive()', 3000);
-  setInterval('topImageHidden()', 24000);
+  setInterval(topImageActive, 3000);
+  setInterval(topImageHidden, 24000);
 });
 
 $(window).on('resize', function(){
@@ -10633,4 +10632,3 @@ function topImageHidden(){
   $('.videoArea__images li').removeClass('active');
   $('.videoArea__images li:first-child').addClass('active');
 }
-
