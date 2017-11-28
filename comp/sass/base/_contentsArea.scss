@@ -4,11 +4,29 @@
     display:block;
   }
   li {
-    border: solid 1px #d7d7d7;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+  }
+  h2 {
+    position: relative;
+    padding-top: 30px;
+  }
+  &__icon_01 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 10%;
+  }
+  &__description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8cc63f;
   }
   &__image{
     position:relative;
+    img {
+      border-radius: 30px 30px 0px 0px;
+    }
     &:before{
       content: "";
       display: block;
@@ -22,23 +40,26 @@
     &.commingsoon:before {background-image: url("http://placehold.jp/10/eb1730/ffffff/40x40.png?text=%E3%81%8B%E3%81%BF%E3%81%99");}
   }
   &__title{
-    color:$primary__green;
+    color: $primary__green;
     font-weight: 700;
     font-size: 24px;
-    border-bottom:2px solid $positiveColor__01;
     margin: auto;
-    width: 70%;
     padding: 0.4em 0em;
+    background-color: #e4007f;
   }
   &__comment{
-    padding:1em 0em 0em 0em;
-    color:$middleColor__01;
+    padding:1em;
+    color: $middleColor__01;
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 700;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 1px 3px 0 0 #eeeeee;
+    background-color: $base__white;
+    padding: 1em;
   span{
     display:block;
-    color:$positiveColor__01;
+    color: $positiveColor__01;
     text-decoration: underline;
     padding: 1em 0em;
     position: relative;
