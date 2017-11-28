@@ -17,9 +17,10 @@ footer {
       flex-flow: row wrap;
       justify-content: flex-start;
       li {
-        width: 31%;
+        width: 32%;
         margin-right: 2%;
-        &:nth-child(2){display:none;}
+        &:first-child {width: 100%;}
+        &:nth-child(3n + 1){margin-right: 0;}
         a {
           display:block;
           img{padding-bottom: 0.5em;}
