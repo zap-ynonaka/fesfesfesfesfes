@@ -1,3 +1,18 @@
+.second {
+  h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #e4007f;
+    margin-bottom: 24px;
+  }
+  div p {
+    margin-bottom: 16px;
+  }
+  b {
+    display: block;
+  }
+}
+
 .secondBase{
   &_title{
     padding-top: 24px;
@@ -5,15 +20,11 @@
   &_fes_2018{
     background:#FFF;
     display: flex;
-  h1{
-    display: flex;
-    padding-right: 50px;
-    width: 100%;
-  }
-  }
-  &_headerImg{
-    // flex: 1;
-    // flex:4;
+    h1{
+      display: flex;
+      padding-right: 50px;
+      width: 100%;
+    }
   }
   &_headerTitle{
     flex: 4;
@@ -24,5 +35,44 @@
       bottom: 0;
       left: 0;
     }
+  }
+}
+
+.goTop {
+  margin: 20px auto;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    background-color: #e4007f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+// 11/30までの仮css
+section.fes_2018_1130 > div {
+  margin: 16px auto;
+}
+
+section.fes_2018_1130 > h3 {
+  margin: 60px auto 12px;
+  color: #141414;
+}
+
+.attentionArea__main {
+  ul {padding-left: 16px;}
+  li {
+    list-style-type: disc;
+    margin-bottom: 16px;
   }
 }
