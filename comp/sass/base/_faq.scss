@@ -3,7 +3,7 @@
     font-size: 15px;
     font-weight:700;
     color:$secondary__pink;
-    padding: 0.8em 0em;
+    padding: .8em 0 0 0;
   }
   ul{
     li{
@@ -14,10 +14,13 @@
     }
       p{
         color: #1e0111;
-        font-size: 12px;
-        padding: 0.5em 0em;
+        font-size: 13px;
         line-height: 24px;
         display: flex;
+        margin-bottom: 6px;
+        &:first-child{
+          font-weight: 700;
+        }
         img{
           width:26px;
           height:26px;
