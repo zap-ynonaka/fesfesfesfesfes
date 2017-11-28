@@ -47,7 +47,7 @@
       font-size: 14px;
       color: #585858;
       font-weight: 700;
-      padding-left: 28px;
+      padding-left: 32px;
       background-image: url(/wp-content/uploads/2017/11/ico_access.png);
       background-repeat: no-repeat;
       background-position: 0 50%;
@@ -56,11 +56,11 @@
       &:after {
         content: "";
         display: block;
-        width: 7px;
-        height: 7px;
+        width: 10px;
+        height: 10px;
         border-top: 2px solid #8cc63f;
         border-right: 2px solid #8cc63f;
-        transform: rotate(135deg);
+        transform: rotate(45deg);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -113,6 +113,29 @@
       text-align: center;
       background-repeat: no-repeat;
       background-position: 10%;
+  }
+
+  &__registrationArea {
+    text-align: center;
+    font-size: 13px;
+    color: #585858;
+    letter-spacing: 2px;
+    &__btn {
+      width: 100%;
+      background: $primary__green;
+      height: 48px;
+      color: $base__white;
+      border-radius: 3px;
+      box-shadow: 0 2px 0 0 #70a22f;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1.3px;
+      span {
+        font-size: 10px;
+        display: block;
+        color: #FFF;
+      }
+    }
   }
 
   .decoTop {margin-top: 0;margin-bottom: 10px;}
