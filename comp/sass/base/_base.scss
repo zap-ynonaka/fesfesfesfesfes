@@ -214,11 +214,20 @@ section {
 @media screen and (min-width: 751px) {
   .deviceSP {display: none;}
   .devicePC {display: block;}
-
   .container {
     width: 100%;}
   .secondBase_fes_2018 h1 {
     width: auto;
+  }
+  .top {
+    padding: 3em;
+    h2 {
+      width:840px;
+      margin: 0 auto;
+      span{
+        font-size: 20px;
+    }
+    }
   }
 }
 
