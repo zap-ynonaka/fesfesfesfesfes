@@ -1,11 +1,32 @@
 @media screen and (min-width: 751px) {
 
   .eventReport{
-   ul {
+  &__imgWrap {
+      display: flex;
+  }
+  &__report {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border:none;
+  }
+  &__img{
+    border:none;
+  }
+  ul {
     width: 840px;
     margin: auto;
+    padding: 20px 0px;
+  li {border: solid 1.4px #979797;}
   }
+  a {
+    height: 50%;
+    font-size: 17.7px;
+  }
+
+    
   }
 
 
 }
+
