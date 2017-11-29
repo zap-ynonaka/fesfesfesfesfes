@@ -1,7 +1,5 @@
 .scheduleArea {
-  > div{
-    // background-color: #fff;
-  }
+  > div > img {padding: 21px 0;}
   &__time {
     margin: 10px auto;
     overflow: hidden;
@@ -36,9 +34,12 @@
     flex-wrap: wrap;
     margin: 20px auto;
     li {
-      width: 50%;
+      width: 57%;
+      &:nth-of-type(2n) {width: 43%;}
     }
-    li:nth-child(2) a {background-image: url(/wp-content/uploads/2017/11/ico_faq.png);}
+    li:nth-child(2) a {background-image: url(/wp-content/uploads/2017/11/ico_map.png);}
+    li:nth-child(3) a {background-image: url(/wp-content/uploads/2017/11/ico_news.png);}
+    li:nth-child(4) a {background-image: url(/wp-content/uploads/2017/11/ico_faq.png);}
     a {
       display: flex;
       justify-content: flex-start;
@@ -130,6 +131,7 @@
       font-size: 17px;
       font-weight: bold;
       letter-spacing: 1.3px;
+      margin: 4px auto 42px;
       span {
         font-size: 10px;
         display: block;
@@ -145,7 +147,11 @@
       background-size: 16px;
       text-indent: 23px;
     }
+    &__guide a {
+      font-size: 10px;
+    }
   }
+
 }
 
 
