@@ -103,6 +103,7 @@ nav.deviceSP {
     ul {
       display: flex;
       flex-flow: row wrap;
+      width: 100%;
     }
     li {
       width: 50%;
@@ -122,7 +123,16 @@ nav.deviceSP {
         margin-right: 5px;
       }
     }
+    &__Description {
+      margin: auto;
+      color: #1e0111;
+      padding: 6px;
+      font-size: 12px;
+      letter-spacing: 0.9px;
   }
+  }
+
+
   ul.navigation__snsArea {
     width: 280px;
     display: flex;
@@ -133,6 +143,15 @@ nav.deviceSP {
       width: 35px;
     }
   }
+
+  @media screen and (max-width: 374px) {
+    .navigation__Contents li:nth-of-type(odd) a{
+      padding-left: 20px;
+    }
+  }
+
+
+
 }
 
 
