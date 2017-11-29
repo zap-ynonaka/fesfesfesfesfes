@@ -16,13 +16,19 @@
 @import "second/_base";
 @import "second/_attentionArea";
 
+@import "pc/_base";
+@import "pc/_top";
+@import "pc/_contentsArea";
+@import "pc/_reflectionArea";
+@import "pc/_eventReport";
 
 
 
-@media screen and (min-width: 751px) {
-  .container {
-    width: 840px;
-    margin: 0 auto;
-  }
-}
+
+// @media screen and (min-width: 751px) {
+//   .container {
+//     width: 840px;
+//     margin: 0 auto;
+//   }
+// }
 

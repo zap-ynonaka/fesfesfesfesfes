@@ -1,0 +1,42 @@
+@media screen and (min-width: 751px) {
+
+  .contentsArea{
+    &__icon_01 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      width: 1200px;
+      margin: auto;
+    }
+    li{
+      margin-right: 2%;
+      width: 32%;
+    &:nth-child(3) {
+      margin:0;
+    }
+    }
+    &__comment{
+      height: 91px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__description{
+      font-size: 32px;
+      padding: 20px;
+    }
+
+  
+  
+  
+  
+  }
+
+}
+
