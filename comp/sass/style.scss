@@ -26,12 +26,3 @@
   }
 }
 
-@media screen and (max-width: 374px) {
-  .eventReport__report a {
-    font-size: 0.8em;
-    padding: 0.6em 0.6em 0.6em 1.6em;
-}
-.eventReport__report::before {
-  left: 1em;
-}
-}
