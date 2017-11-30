@@ -23,6 +23,12 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #f4f4f4;
 }
+a {
+  display: block;
+  &:hover {
+    opacity: 0.5;
+  }
+}
 img {
   vertical-align: top;
   width: 100%;
