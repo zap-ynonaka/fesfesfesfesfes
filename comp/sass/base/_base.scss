@@ -23,6 +23,12 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #f4f4f4;
 }
+a {
+  display: block;
+  &:hover {
+    opacity: 0.5;
+  }
+}
 img {
   vertical-align: top;
   width: 100%;
@@ -215,7 +221,8 @@ section {
   .deviceSP {display: none;}
   .devicePC {display: block;}
   .container {
-    width: 100%;}
+    width: 100%;
+    padding-bottom: 35px;}
   .secondBase_fes_2018 h1 {
     width: auto;
   }
@@ -225,8 +232,12 @@ section {
       width:840px;
       margin: 0 auto;
       span{
-        font-size: 20px;
-    }
+      font-size: 20px;
+      }
+     > img {
+      width: 583px;
+      margin: auto;
+      }
     }
   }
 }
