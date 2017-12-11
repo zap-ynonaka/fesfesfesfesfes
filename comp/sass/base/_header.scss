@@ -189,7 +189,7 @@ nav.deviceSP {
 
 @media screen and (min-width: 751px) {
   .breadcrumb {display: none;}
-  .secondBase_fes_2018.devicePC {
+  header.secondBase_fes_2018.devicePC {
     display: block;
     width: 100%;
     background-color: #ffffff;
@@ -236,11 +236,8 @@ nav.deviceSP {
     }
   }
   .navigation__Contents {
-    ul {
-      flex-direction: column;
-    }
-    li {
-      width: 100%;
+    ul {flex-direction: column;}
+    li {width: 100%;
       &:first-child a {border-top: 0;}
     }
     a {
@@ -306,6 +303,11 @@ nav.deviceSP {
 }
 
 
+@media screen and (max-width: 750px) {
+  header nav.deviceSP ul.navigation__snsArea li {
+    border-top: 0;
+  }
+}
 
 
 
