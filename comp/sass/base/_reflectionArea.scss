@@ -1,4 +1,4 @@
-.reflectionArea {
+.reflectionArea {padding-bottom: 21px;
   &__movie{
     position: relative;
     overflow: hidden;
@@ -28,7 +28,7 @@
   video::-internal-media-controls-download-button {
     display:none;
   }
-
+  
   video::-webkit-media-controls-enclosure {
     overflow:hidden;
   }
@@ -37,10 +37,12 @@
     width: calc(100% + 30px); /* Adjust as needed */
   }
 
+}
 
 
-
-
-
-
+@media screen and (min-width: 751px) {
+  .reflectionArea__movie img {
+    width: 152px;
+    height: 152px;
+  }
 }
