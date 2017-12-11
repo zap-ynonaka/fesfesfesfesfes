@@ -15,7 +15,7 @@
 
 .secondBase {
   &_title {
-    padding-top: 24px;
+    padding: 70px 0 10px;
   }
   &_fes_2018 {
     background:#FFF;
@@ -29,18 +29,19 @@
   &_headerTitle {
     flex: 1;
     position: relative;
+    display: none;
     img {
       width: 90%;
       max-width: 210px;
       position: absolute;
       bottom: 3px;
-      left: 0;
+      left: 3px;
     }
   }
 }
 
 .secondBase_headerImg {
-  width: 80px;
+  width: 112px;
 }
 
 .goTop {
@@ -62,7 +63,7 @@
 
 @media screen and (min-width: 751px) {
   .secondBase_headerImg {
-    width: 126px;
+    width: 180px;
   }
 }
 

@@ -1,44 +1,42 @@
 @media screen and (min-width: 751px) {
 
   .eventReport{
-  &__imgWrap {
+    &__imgWrap {
+        display: flex;
+    }
+    &__report {
       display: flex;
-  }
-  &__report {
-    display: flex;
-    flex-direction: column;
-    border:none;
-    flex: 1;
-    a{
-      padding-left: 40px;
-    &:nth-child(1) {
-      padding-top: 12px;
-      background-position: 16px 28px;
+      flex-direction: column;
+      justify-content: center;
+      border:none;
+      flex: 1;
+      a{
+        padding-left: 40px;
+      }
     }
-    &:nth-child(2) {
-      padding-bottom: 12px;
-      background-position: 16px 15px;
+    &__img{
+      border:none;
+      width: 190px;
     }
+    ul {
+      width: 840px;
+      margin: auto;
+      padding: 20px 0px;
+      li {border: solid 1px #979797;}
     }
-  }
-  &__img{
-    border:none;
-    width: 190px;
-  }
-  ul {
-    width: 840px;
-    margin: auto;
-    padding: 20px 0px;
-  li {border: solid 1px #979797;}
-  }
-  a {
-    height: 50%;
-    font-size: 17.7px;
-  }
+    a {
+      font-size: 17.7px;
+    }
 
-    
   }
-
 
 }
 
+@media screen and (max-width: 750px) {
+  .eventReport__report {
+    padding: 6px 0;
+    a {
+      height: 36px;
+    }
+  }
+}
