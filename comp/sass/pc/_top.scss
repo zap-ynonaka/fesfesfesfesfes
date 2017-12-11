@@ -6,3 +6,20 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 751px) {
+  .top {
+    padding: 3em;
+    h2 {
+      width:840px;
+      margin: 0 auto;
+      span{
+      font-size: 20px;
+      }
+     > img {
+      width: 583px;
+      margin: auto;
+      }
+    }
+  }
+}

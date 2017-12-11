@@ -149,6 +149,10 @@
         font-weight: normal;
       }
     }
+    li:nth-of-type(2n) a {
+      color: #ccc;pointer-events: none;
+      &:after {display: none;}
+    }
   }
 
   .decoTop {margin-top: 0;margin-bottom: 10px;}
@@ -194,16 +198,4 @@
   .scheduleArea__registrationArea {
     font-size: 20px;
   }
-}
-
-
-
-
-
-.scheduleArea__guide li:nth-of-type(2n) a {
-  color: #ccc;
-  pointer-events: none;
-}
-.scheduleArea__guide li:nth-of-type(2n) a:after {
-  display: none;
 }
