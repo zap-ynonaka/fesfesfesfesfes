@@ -14,12 +14,14 @@ footer {
   &__links{
     padding:0px 16px;
     ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
+      // display: flex;
+      // flex-flow: row wrap;
+      // justify-content: flex-start;
+      overflow: hidden;
       li {
         width: 32%;
         margin-right: 2%;
+        float: left;
         &:first-child {width: 100%;}
         &:nth-child(3n + 1){margin-right: 0;}
         a {
@@ -63,4 +65,5 @@ footer {
     font-weight: 700;
   }
 }
-  //これがfooterの閉じタグ！
+
+//これがfooterの閉じタグ！
