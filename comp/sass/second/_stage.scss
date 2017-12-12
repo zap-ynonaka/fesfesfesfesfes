@@ -1,0 +1,63 @@
+.stage__fes2018{
+  &.sw-Tab>a {
+    background: #f8f8f8;
+    border: none;
+    color: #828282;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius:2px;
+  }
+  &.sw-Tab.active>a {
+      background: $primary__green;
+      color:#FFF;
+  }
+  &.ct-TimeTable__Time {
+    background: $primary__green;
+  }
+  &.ct-TimeTable__Info{
+    border: 1px solid $primary__green;
+  }
+  &.ct-TimeTable__Corner{
+    color: #1e0111;
+  }
+  &.ct-TimeTable__Guest{
+    color:$primary__green;
+  }
+  &.ct-TimeTable__Workshop {
+    margin: 12px 0px;
+    h6{
+      font-size: 14px;
+      color:$primary__green;
+      font-weight:bold;
+    }
+    p a{
+      text-decoration: underline;
+      font-size: 12px;
+      font-weight:bold;
+    }
+  }
+  &.ct-TimeTable__BottomBtn{
+    text-align: center;
+   p {
+    padding: 16px;
+    font-weight: bold;
+    color: #1e0111;
+  }
+  div{
+    background-color: #e4007f;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 #b81d65;
+  }
+  a {
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  }
+
+
+
+}
