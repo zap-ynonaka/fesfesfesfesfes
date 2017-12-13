@@ -1,4 +1,10 @@
 .stage__fes2018{
+  &.sw-Card__Main{
+   p {
+    margin-bottom: 12px;
+  }
+  }
+
   &.sw-Tab>a {
     background: #f8f8f8;
     border: none;
@@ -13,7 +19,21 @@
   }
   &.ct-TimeTable__Time {
     background: $primary__green;
+    position: relative;
   }
+  &.ct-TimeTable__TimeFrom{
+    padding-bottom: 13px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    &:after{top: 32px;}
+  }
+  &.ct-TimeTable__wrapper {
+    position: absolute;
+    top: 14px;
+    width: 100%;
+  }
+  &.ct-TimeTable__Time--last{border-bottom:none;}
   &.ct-TimeTable__Info{
     border: 1px solid $primary__green;
   }
