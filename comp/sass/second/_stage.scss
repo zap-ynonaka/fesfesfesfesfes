@@ -1,25 +1,27 @@
-.stage__fes2018{
-  &.sw-Card__Main{
-   p {
-    margin-bottom: 12px;
-  }
+.stage__fes2018 {
+  &.sw-Card__Main {
+    p {
+      margin-bottom: 12px;
+    }
   }
 
-  &.sw-Tab>a {
+  &.sw-Tab > a {
     background: #f8f8f8;
     border: none;
     color: #828282;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
     border-radius:2px;
   }
-  &.sw-Tab.active>a {
+  &.sw-Tab.active > a {
       background: $primary__green;
       color:#FFF;
   }
   &.ct-TimeTable__Time {
     background: $primary__green;
     position: relative;
+    vertical-align: top;
+    padding-top: 12px;
   }
   &.ct-TimeTable__TimeFrom{
     padding-bottom: 13px;
@@ -58,26 +60,27 @@
   }
   &.ct-TimeTable__BottomBtn{
     text-align: center;
-   p {
-    padding: 16px;
-    font-weight: bold;
-    color: #1e0111;
+    p {
+      padding: 16px;
+      font-weight: bold;
+      color: #1e0111;
+    }
+    div{
+      background-color: #e4007f;
+      padding: 10px;
+      border-radius: 3px;
+      box-shadow: 0 2px 0 0 #b81d65;
+    }
+    a {
+      color: #FFF;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+    }
   }
-  div{
-    background-color: #e4007f;
-    padding: 10px;
-    border-radius: 3px;
-    box-shadow: 0 2px 0 0 #b81d65;
-  }
-  a {
-    color: #FFF;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-size: 16px;
-  }
-  }
-
-
 
 }
+
+
+
