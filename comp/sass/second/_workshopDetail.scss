@@ -1,0 +1,176 @@
+.workshopDetail{
+  &.ws-Item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #585858;
+    text-decoration: none;
+  }
+  &.ws-Item_Main {
+      display: flex;
+  }
+  &.ws-Item_ImageText {
+      text-align: center;
+      color: #e4007f;
+      font-size: 13px;
+      font-weight: 700;
+  }
+  &.ws-Item_ImageText-soldOut {
+      color: #de0000;
+  }
+  &.ws-Item_Text {
+      flex: 1;
+      padding-left: 8px;
+  }
+  &.ws-Item_Text>h3 {
+      margin: 4px 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.43;
+      color: #1e0111;
+  }
+  &.ws-Item_TextPrice {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  &.ws-Item_TextPrice>span {
+    font-weight: 700;
+    color: #8cc63f;
+  }
+  &.ws-Detail {
+    border-top: 1px dotted #dcdcdc;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+  &.ws-Detail-noborder {
+    border-top: none;
+    margin-top: 22px;
+    padding-top: 0;
+  }
+  &.ws-Detail_Title {
+    color: #8cc63f;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  &.ws-Detail_Section {
+    padding: 30px 0 22px;
+    border-top: 1px solid #efefef;
+  }
+  &.ws-Item_TextPrice>span {
+    font-weight: 700;
+    color: #8cc63f;
+  }
+
+  &li.sw-Tab {
+    padding: 0;
+    margin-right: 11px
+  }
+
+  &li.sw-Tab:last-child {
+    margin-right: 0
+  }
+
+  &.fes_2018_1130>div {
+    margin: 0 auto 16px
+  }
+
+  &.sw-Card__Main p {
+    margin-bottom: 12px
+  }
+
+  &.sw-Tab>a {
+    background: #f8f8f8;
+    border: none;
+    color: #828282;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px
+  }
+
+  &.sw-Tab.active>a {
+    background: #8cc63f;
+    color: #FFF
+  }
+
+  &.ct-TimeTable__List {
+    overflow-x: scroll
+  }
+
+  &.ct-TimeTable__Time {
+    background: #8cc63f;
+    vertical-align: top;
+    padding-top: 12px
+  }
+
+  &.ct-TimeTable__TimeFrom {
+    padding-bottom: 13px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block
+  }
+
+  &.ct-TimeTable__TimeFrom:after {
+    top: 32px
+  }
+
+  &.ct-TimeTable__Time--last {
+    border-bottom: none
+  }
+
+  &.ct-TimeTable__Info {
+    border: 1px solid #8cc63f
+  }
+
+  &.ct-TimeTable__Corner {
+    color: #1e0111
+  }
+
+  &.ct-TimeTable__Guest {
+    color: #8cc63f
+  }
+
+  &.ct-TimeTable__Workshop {
+    margin: 12px 0px
+  }
+
+  &.ct-TimeTable__Workshop h6 {
+    font-size: 14px;
+    color: #8cc63f;
+    font-weight: bold
+  }
+ 
+  &.ct-TimeTable__Workshop p a {
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold
+  }
+
+  &.ct-TimeTable__BottomBtn {
+    text-align: center
+  }
+
+  &.ct-TimeTable__BottomBtn p {
+    padding: 16px;
+    font-weight: bold;
+    color: #1e0111
+  }
+
+  &.ct-TimeTable__BottomBtn div {
+    background-color: #e4007f;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 0 0 #b81d65;
+    box-shadow: 0 2px 0 0 #b81d65
+  }
+
+  &.ct-TimeTable__BottomBtn a {
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 16px
+  }
+
+
+}
