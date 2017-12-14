@@ -1,8 +1,11 @@
-.stage__fes2018 {
-  &.sw-Card__Main {
-    p {
-      margin-bottom: 12px;
-    }
+.stage__fes2018{
+  &.fes_2018_1130>div {
+    margin: 0 auto 16px;
+  }
+  &.sw-Card__Main{
+   p {
+    margin-bottom: 12px;
+  }
   }
 
   &.sw-Tab > a {
@@ -17,9 +20,11 @@
       background: $primary__green;
       color:#FFF;
   }
+  &.ct-TimeTable__List{
+    overflow-x: scroll;
+  }
   &.ct-TimeTable__Time {
     background: $primary__green;
-    position: relative;
     vertical-align: top;
     padding-top: 12px;
   }
@@ -29,11 +34,6 @@
     font-weight: bold;
     display: block;
     &:after{top: 32px;}
-  }
-  &.ct-TimeTable__wrapper {
-    position: absolute;
-    top: 14px;
-    width: 100%;
   }
   &.ct-TimeTable__Time--last{border-bottom:none;}
   &.ct-TimeTable__Info{
@@ -83,4 +83,13 @@
 }
 
 
+  @media screen and (max-width: 320px) {
+    &.ct-TimeTable__List{
+      width: 220px;
+    }
+  }
+
+
+
+}
 
