@@ -8,7 +8,7 @@
   ul{
     li{
       border-bottom: 1px solid #eeeeee;
-      padding: 0.5em 0;
+      padding: 1.5em 0;
     &:last-child{
         border:none;
     }
@@ -17,7 +17,7 @@
         font-size: 13px;
         line-height: 24px;
         display: flex;
-        margin-bottom: 6px;
+        margin-bottom: 1em;
         &:first-child{
           font-weight: 700;
         }
