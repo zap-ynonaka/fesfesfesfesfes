@@ -1,0 +1,16 @@
+.foodsArea__main{
+  &__title {
+  color: $secondary__pink;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 12px;
+  }
+  &__manu ul li {
+    display: flex;
+  }
+  img {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+}

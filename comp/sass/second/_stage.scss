@@ -42,14 +42,11 @@
   &.ct-TimeTable__Corner{
     color: #1e0111;
   }
-  &.ct-TimeTable__Guest{
-    color:$primary__green;
-  }
   &.ct-TimeTable__Workshop {
     margin: 12px 0px;
     h6{
       font-size: 14px;
-      color:$primary__green;
+      color:$secondary__pink;
       font-weight:bold;
     }
     p a{
