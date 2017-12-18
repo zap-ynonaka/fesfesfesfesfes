@@ -48,7 +48,7 @@
     padding-top: 0;
   }
   &.ws-Detail_Title {
-    color: #8cc63f;
+    color:$secondary__pink;
     font-size: 1.6rem;
     line-height: 1;
     margin-bottom: 12px;
@@ -170,6 +170,21 @@
     display: block;
     text-align: center;
     font-size: 16px
+  }
+  &.ws-map_btn a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #8cc63f;
+    padding: 10px 0px;
+    color: #FFF;
+    font-weight: bold;
+    box-shadow: 0 2px 0 0 #70a22f;
+    border-radius: 3px;
+    font-size: 17px;
+}
+  &.ws-map_img {
+    padding: 20px;
   }
 
 
