@@ -28,9 +28,6 @@
   }
   &__image{
     position:relative;
-    img {
-
-    }
     &:before{
       content: "";
       display: block;
@@ -42,6 +39,18 @@
     }
     &.new:before {background-image: url("http://placehold.jp/10/3d4070/ffffff/40x40.png?text=%E3%81%AB%E3%82%85%E3%83%BC");}
     &.commingsoon:before {background-image: url("http://placehold.jp/10/eb1730/ffffff/40x40.png?text=%E3%81%8B%E3%81%BF%E3%81%99");}
+    &.badge:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 70px;
+      height: 70px;
+      background-image: url(/wp-content/uploads/2017/12/ico_kaiunpark.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
   &__title{
     color: $base__white;
