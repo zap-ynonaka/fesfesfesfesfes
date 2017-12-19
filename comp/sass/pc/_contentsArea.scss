@@ -20,7 +20,7 @@
     li{
       margin-right: 2%;
       width: 32%;
-      &:nth-child(3) {
+      &:nth-child(3n) {
         margin:0;
       }
     }
