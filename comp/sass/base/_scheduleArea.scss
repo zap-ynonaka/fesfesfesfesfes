@@ -39,8 +39,7 @@
     flex-wrap: wrap;
     margin: 20px auto 0;
     li {
-      width: 57%;
-      &:nth-of-type(2n) {width: 43%;}
+      width: 50%;
     }
     li:nth-child(2) a {background-image: url(/wp-content/uploads/2017/11/ico_map.png);}
     a {
@@ -51,10 +50,10 @@
       font-size: 14px;
       color: #585858;
       font-weight: 700;
-      padding-left: 32px;
+      padding-left: 36px;
       background-image: url(/wp-content/uploads/2017/11/ico_access.png);
       background-repeat: no-repeat;
-      background-position: 0 50%;
+      background-position: 5px 50%;
       background-size: 26px;
       position: relative;
       &:after {
@@ -169,7 +168,6 @@
 
 }
 
-
 @media screen and (min-width: 751px) {
   .scheduleArea {
     width: 100%;
@@ -195,4 +193,16 @@
   .scheduleArea__registrationArea {
     font-size: 20px;
   }
+}
+
+
+
+
+.scheduleArea__guide:nth-of-type(1) li:nth-child(2) a {
+  pointer-events: none;
+  color: #ccc;
+}
+
+.scheduleArea__guide:nth-of-type(1) li:nth-child(2) a:after {
+  display: none;
 }
