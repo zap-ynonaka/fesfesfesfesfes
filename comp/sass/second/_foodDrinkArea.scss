@@ -5,15 +5,19 @@
     color: #1f0112;
   }
   &__list ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    overflow: hidden;
     padding: 16px;
     li {
-      width: 49%;
+      width: 48%;
+      float: left;
       border: solid 1px #e4007f;
-      margin-bottom: 16px;
       position: relative;
+      margin-bottom: 16px;
+      &:nth-child(2n){
+        float:right;
+      }
+      a {
+      display: block;
       &:before {
         content: "A";
         width: 24px;
@@ -28,8 +32,6 @@
         text-align: center;
         line-height: 24px;
       }
-      a {
-          display: block;
       }
     }
   }
@@ -40,7 +42,7 @@
   line-height: 1;
   margin-bottom: 12px;
   }
-  &__menu ul li {
+  &__menu ul li a{
     display: flex;
     align-items: center;
     padding: 0.81em 1.25em 0.81em 0.81em;

@@ -1,4 +1,4 @@
-.workshopDetail{
+.workshopDetail {
   &.ws-Item {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -7,29 +7,59 @@
     text-decoration: none;
   }
   &.ws-Item_Main {
-      display: flex;
+    display: flex;
+    padding-top: 32px;
   }
   &.ws-Item_ImageText {
-      text-align: center;
-      color: #e4007f;
-      font-size: 13px;
-      font-weight: 700;
+    text-align: center;
+    color: #e4007f;
+    font-size: 13px;
+    font-weight: 700;
+    span {
+      color: #de0000;
+    }
+  }
+  &.ws-Item_Image {
+    width: 40%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &.ws-Item_Cate {
+    li {
+      color: #585858;
+      font-size: 9px;
+      background-color: #eeeeee;
+      display: inline-block;
+      padding: 0px 6px;
+      border-radius: 10px;
+    }
   }
   &.ws-Item_ImageText-soldOut {
-      color: #de0000;
+    color: #de0000;
   }
   &.ws-Item_Text {
-      flex: 1;
-      padding-left: 8px;
+    flex: 1;
+    padding-left: 8px;
   }
   &.ws-Item_Text>h3 {
-      margin: 4px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.43;
-      color: #1e0111;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    color: #1e0111;
+    margin: 0;
+    text-align: left;
   }
-  &.ws-Item_TextPrice {
+  &.ws-Item_Info {
+    margin-top: 6px;
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0;
+    }
+  }
+  p.ws-Item_TextPrice {
     font-size: 14px;
     margin-top: 6px;
   }
@@ -52,6 +82,37 @@
     font-size: 1.6rem;
     line-height: 1;
     margin-bottom: 12px;
+    text-align: left;
+  }
+  &.sw-FlexMedia {
+    justify-content: left;
+    padding-bottom: 28px;
+  }
+  &.sw-FlexMedia__Item {
+    width: 80px;
+    align-items: flex-start;
+    flex: none;
+    margin-right: 10px;
+    > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &.sw-FlexMedia__Image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 8px;
+    width: 80px;
+  }
+  &.sw-FlexMedia__Category {
+    background-color: #eee;
+    color: #585858;
+    font-weight: normal;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 2px;
   }
   &.ws-Detail_Section {
     padding: 30px 0 22px;
@@ -139,7 +200,7 @@
     color: #8cc63f;
     font-weight: bold
   }
- 
+
   &.ct-TimeTable__Workshop p a {
     text-decoration: underline;
     font-size: 12px;
@@ -188,4 +249,45 @@
   }
 
 
+}
+
+
+@media screen and (min-width: 751px) {
+  .workshopDetail {
+    &.ws-Item_Image {
+      width: 250px;
+    }
+    &.ws-Item_ImageText {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+    &.ws-Item_Text {
+      padding-left: 32px;
+    }
+    &.ws-Item_Cate li {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 2px 6px 0px;
+    }
+    &.ws-Item_Text>h3 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &.ws-Item_Info p {
+      font-size: 15px;
+      line-height: 19px;
+    }
+
+    & p.ws-Item_TextPrice {
+      font-size: 19px;
+      margin-top: 8px;
+    }
+    &.ws-Detail {
+      margin-left: 280px;
+    }
+    &.ws-Item {
+      padding-bottom: 32px;
+    }
+  }
 }
