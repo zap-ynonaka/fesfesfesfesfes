@@ -1,0 +1,120 @@
+.foodsDetail{
+    &__shopLogo {
+      width: 28%;
+    }
+    &__foodsTitle {
+      color: #1e0111;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      span {
+        display: block;
+        color: #e4007f;
+        font-size: 11px;
+      }
+    }
+    &__discription {
+      p {
+        border: solid 2px #8cc63f;
+        border-radius: 30px;
+        width: 40%;
+        margin: 16px auto;
+        padding: 2px;
+        text-align: center;
+        font-weight: bold;
+        color: #585858;
+      }
+      a {
+        text-decoration: underline;
+        color: #8cc63f;
+        font-size: 13px;
+        font-weight: bold;
+        position: relative;
+        display: block;
+        text-align: right;
+      }
+      span {
+        color: #141414;
+      }
+    }
+    &__person p {
+      width: 40%;
+      margin-left: auto;
+      margin-top: 20px;
+      a {
+        text-decoration: underline;
+        color: #8cc63f;
+        font-size: 13px;
+        font-weight: bold;
+        position: relative;
+      &:after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-top: solid 2px #8cc63f;
+          border-right: solid 2px #8cc63f;
+          transform: rotate(45deg);
+          position: absolute;
+          right: -12px;
+          top: 30%;
+      }
+      }
+    }
+    &__personDetail {
+      margin: auto;
+      width: 120px;
+      img {
+        border-radius: 50%;
+        opacity: 0.9;
+        border: solid 1px #eeeeee;
+        height: 120px;
+        width: 120px;
+      }
+      span {
+        display: block;
+      }
+      div {
+        text-align: center;
+        font-weight: bold;
+        color: #141414;
+        span {
+          font-size: 10px;
+          color: #585858;
+        }
+      }
+    }
+    &__placeMap p {
+      padding: 0px 20px;
+    }
+    &__notes ul {
+      padding-left: 24px;
+    li {
+      list-style-type: disc;
+      color: #767677;
+    }
+    }
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .foodsDetail{
+    .foodsDetail{
+    &__foodsPic {
+      margin-right: -16px;
+      margin-left: -16px;
+    }
+    &__title {
+      text-align: left;
+    }
+    }
+  }
