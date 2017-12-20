@@ -1,0 +1,45 @@
+@media screen and (min-width: 751px) {
+
+.foodsDetail{
+  &__detail {
+    background-color: #f4f4f4;
+    padding: 1px 45px 50px 45px;
+  }
+  &__topContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content{
+    background: #fff;
+    padding: 0px 100px 70px 100px;
+  }
+  &__shopLogo {
+    width: 25%;
+    margin:0;
+  }
+  &__foodsPic {
+    width: 62%;
+  }
+  &__foodsTitle {
+    padding: 30px 0px;
+  }
+}
+
+
+.foodsDetail{
+  .foodsDetail{
+    &__foodsPic {
+      margin-right: 0px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+}
