@@ -1,4 +1,4 @@
-.attractionArea__main{
+.attractionArea__main {
   h3 span {
     display: block;
     font-size: 15px;
@@ -17,12 +17,11 @@
       }
     }
   }
-
   &__title {
-  color: $secondary__pink;
-  font-size: 1.6rem;
-  line-height: 1;
-  margin-bottom: 12px;
+    color: $secondary__pink;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 12px;
   }
   &__menu ul li a{
     display: flex;

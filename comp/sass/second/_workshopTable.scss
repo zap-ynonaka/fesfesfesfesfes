@@ -19,6 +19,9 @@
     &:nth-of-type(4n) td {
       border-bottom: 1px solid #dcdcdc;
     }
+    td.tableArea__lineBottom {
+      border-bottom: 1px dotted #dcdcdc;
+    }
   }
   &__schedule {
     color: #dcdcdc;
@@ -59,9 +62,9 @@
   }
   &__map {
     margin: 60px 0px;
-  p{
-    padding: 20px;
-  }
+    p{
+      padding: 20px;
+    }
   }
 
 
@@ -69,5 +72,77 @@
     border-top: 2px solid #8ac832;font-size: 13px;line-height: 19px;
     th:nth-of-type(2) {background-color: #f6fbe9;}
     th:nth-of-type(3) {background-color: #fce5f2;}
+  }
+}
+
+
+
+@media screen and (min-width: 751px) {
+  .workshopArea {
+    .ct-MemberList__Date {
+      display: none;
+    }
+
+    .tab-content {
+      width: 1200px;
+      display: flex;
+      margin: 0 -200px;
+      > .tab-pane {
+        display: block !important;
+        opacity: 1;
+      }
+    }
+
+    .tab-content > div:nth-of-type(2) th:first-child,
+    .tab-content > div:nth-of-type(2) tr td:first-child,
+    .tab-content > div:nth-of-type(3) th:first-child,
+    .tab-content > div:nth-of-type(3) tr td:first-child {display: none;}
+
+    thead {
+      border-top: 0;
+    }
+
+    .workshopArea__tableDate th:last-child {
+      background-color: #e9439e;
+      color: #fff;
+      border-left: 1px solid #fff;
+      padding-top: 5px;
+      height: 60px;
+      font-size: 21px;
+    }
+    .workshopTable:first-child .workshopArea__tableDate th:last-child {
+      border-left: 0;
+    }
+    .workshopArea__tableRoom th {
+      border: 1px solid #dcdcdc;
+      &:first-child {
+        border: 0;
+      }
+    }
+    .tab-content>.tab-pane:nth-of-type(2) table {
+      border-left: 1px solid #dcdcdc;
+    }
+
+    .tab-content>.tab-pane:nth-of-type(3) table {
+      border-left: 1px solid #dcdcdc;
+      border-right: 1px solid #dcdcdc;
+    }
+
+    tr td:last-child {
+      border-left: 1px dotted #dcdcdc;
+    }
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .workshopArea__tableDate {
+    display: none;
+  }
+  .workshopTable table {
+    border-right: 1px solid #dcdcdc;
+  }
+  .workshopTable__block td:last-child {
+    border-left: 1px dotted #dcdcdc;
   }
 }
