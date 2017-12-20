@@ -1,6 +1,10 @@
 .foodsDetail{
+    &__detail {
+    padding: 1px 0px;
+    }
     &__shopLogo {
       width: 28%;
+      margin: 10px auto;
     }
     &__foodsTitle {
       color: #1e0111;
