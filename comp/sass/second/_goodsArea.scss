@@ -1,0 +1,46 @@
+.goodsArea {
+  .goodsArea__listTitle {
+    text-align: left;
+    margin-bottom: 6px;
+  }
+  .goodsArea__list ul {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .goodsArea__listItem {
+    a {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 1px solid #dcdcdc;
+      position: relative;
+      &:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid #8cc63f;
+        border-right: 2px solid #8cc63f;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 1em;
+      }
+      > div {
+        span:first-child {
+          font-size: 9px;
+          color: #e4007f;
+          font-weight: 700;
+        }
+        div {
+          font-size: 14px;
+          font-weight: 700;
+          color: #1e0111;
+        }
+        span:last-child {
+          color: #8cc63f;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

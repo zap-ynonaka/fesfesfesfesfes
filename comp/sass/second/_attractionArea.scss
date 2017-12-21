@@ -23,43 +23,74 @@
     line-height: 1;
     margin-bottom: 12px;
   }
-  &__menu ul li a{
+  &__menu ul{
+    margin: 16px -16px;
+    li a {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-bottom: 1px solid #dcdcdc;
+      position:relative;
+      height: 110px;
+      &:before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        border: 2px solid #8476b5;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 16px;
+        color: #8476b5;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0px 1px;
+      }
+      &.no_1:before {content: "1";}
+      &.no_2:before {content: "2";}
+      &.no_3:before {content: "3";}
+      &.no_4:before {content: "4";}
+      &.no_5:before {content: "5";}
+      &.no_6:before {content: "6";}
+      &.no_7:before {content: "7";}
+      &.no_8:before {content: "8";}
+      &.no_9:before {content: "9";}
+      &:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-top: solid 2px #8cc63f;
+        border-right: solid 2px #8cc63f;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 1em;
+      }
+      img {
+        width: 126px;
+        height: 76px;
+        margin-right: 10px;
+        margin-left: 12px;
+      }
+    }
+  }
+  &__ticketSpace {
+    height: 21px;
     display: flex;
-    align-items: center;
-    padding: 0.81em;
-    border-bottom: 1px solid #dcdcdc;
-    margin-right: -16px;
-    margin-left: -16px;
-    position:relative;
-    &:before {
-      content: "A";
-      width: 24px;
-      height: 24px;
-      background: #f39800;
-      border-radius: 50%;
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      color: #FFF;
-      font-weight: bold;
-      text-align: center;
-      line-height: 24px;
-    }
-    &:after {
+    justify-content: flex-start;
+    &.ticket:before {
       content: "";
-      width: 12px;
-      height: 12px;
-      border-top: solid 2px #8cc63f;
-      border-right: solid 2px #8cc63f;
-      transform: rotate(45deg);
-      position: absolute;
-      right: 1em;
-    }
-    img {
-      width: 126px;
-      height: 76px;
+      display: inline-block;
+      width: 30px;
+      height: 21px;
+      background-image: url(/wp-content/uploads/2017/11/ticketIcon.png);
+      background-size: cover;
       margin-right: 10px;
     }
+    &.sheet_01:after {content: "× 1";}
+    &.sheet_02:after {content: "× 2";}
+    &.sheet_03:after {content: "× 3";}
   }
   &__menuDetail{
     div {
@@ -67,35 +98,71 @@
       font-weight: bold;
       color: #1e0111;
     }
-    }
-    &__menuDetail div:first-child {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    &__menuDetail div:last-child {
-      font-size: 14px;
-      color: #585858;
-    }
-    &__menuDetail span {
-      color: #8cc63f;
+  }
+  &__menuDetail div:first-child {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__menuDetail div:last-child {
+    font-size: 14px;
+    color: #585858;
+  }
+  &__menuDetail span {
+    color: #8cc63f;
   }
   &__placeMap p {
     padding: 0px 20px;
   }
 }
 
-.attractionArea{
-  .attractionArea__main{
-  &__title{
-    text-align: left;
-  }
-  &__map {
-    margin-right: -16px;
-    margin-left: -16px;
-    background-color: #f8f8f8;
-  }
-  &__placeMap {
-    margin-top: 32px;
-  }
+.attractionArea {
+  .attractionArea__main {
+    &__title {
+      text-align: left;
+      margin-bottom: 4px;
+    }
+    &__map {
+      margin-right: -16px;
+      margin-left: -16px;
+      padding-top: 24px;
+      h3 {
+        text-align: left;
+        padding-left: 16px;
+        margin-bottom: 4px;
+      }
+    }
+    &__placeMap {
+      margin-top: 32px;
+    }
   }
 }
+
+
+@media screen and (min-width: 751px) {
+  .attractionArea {
+    .attractionArea__main {
+      &__map h3 {
+        text-align: center;
+        font-size: 19px;
+      }
+
+      &__title {
+        text-align: center;
+        margin-bottom: 13px;
+        font-size: 19px;
+      }
+
+      &__menu {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        li {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+

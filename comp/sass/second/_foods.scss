@@ -1,4 +1,4 @@
-.foodsArea__main{
+.foodsArea__main {
   h3 span {
     display: block;
     font-size: 15px;
@@ -17,38 +17,37 @@
         float:right;
       }
       a {
-      display: block;
-      &:before {
-        content: "A";
-        width: 24px;
-        height: 24px;
-        background: #f39800;
-        border-radius: 50%;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        color: #FFF;
-        font-weight: bold;
-        text-align: center;
-        line-height: 24px;
-      }
+        display: block;
+        &:before {
+          content: "A";
+          width: 24px;
+          height: 24px;
+          background: #f39800;
+          border-radius: 50%;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          color: #FFF;
+          font-weight: bold;
+          text-align: center;
+          line-height: 24px;
+        }
       }
     }
   }
 
   &__title {
-  color: $secondary__pink;
-  font-size: 1.6rem;
-  line-height: 1;
-  margin-bottom: 12px;
+    color: $secondary__pink;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 12px;
   }
-  &__menu ul li a{
+  &__menu ul li a {
     display: flex;
     align-items: center;
     padding: 0.81em 1.25em 0.81em 0.81em;
     border-bottom: 1px solid #dcdcdc;
-    margin-right: -16px;
-    margin-left: -16px;
+    position: relative;
     &:after {
       content: "";
       width: 12px;
@@ -65,41 +64,72 @@
       margin-right: 10px;
     }
   }
-  &__menuDetail{
-  padding-right: 1.13em;
+  &__menuDetail {
+    padding-right: 1.13em;
+    width: 100%;
      div {
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 700;
+      line-height: 20px;
       color: #1e0111;
     }
   }
   &__menuDetail span:first-child {
-      font-size: 9px;
-      color: $secondary__pink;
-      font-weight: bold;
+    font-size: 9px;
+    line-height: 12px;
+    display: block;
+    color: #e4007f;
+    font-weight: 700;
   }
   &__menuDetail span:last-child {
-      color: #8cc63f;
-      font-size: 14px;
-      font-weight: bold;
+    color: #8cc63f;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    line-height: 20px;
   }
   &__placeMap p {
     padding: 0px 20px;
   }
 }
 
-.foodsArea{
-  .foodsArea__main{
-  &__title{
-    text-align: left;
+.foodsArea {
+  .foodsArea__main {
+    &__title{
+      text-align: left;
+      padding: 0 16px;
+      margin-bottom: 6px;
+    }
+    &__map {
+      margin-right: -16px;
+      margin-left: -16px;
+      padding-top: 24px;
+      margin-bottom: 30px;
+    }
+    &__menu {
+      margin: 30px -16px 0;
+    }
+    &__placeMap {
+      margin-top: 32px;
+    }
   }
-  &__map {
-    margin-right: -16px;
-    margin-left: -16px;
-    background-color: #f8f8f8;
-  }
-  &__placeMap {
-    margin-top: 32px;
-  }
+}
+
+@media screen and (min-width: 751px) {
+  .foodsArea {
+    .foodsArea__main__map {
+       > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        > div {
+          width: 50%;
+        }
+      }
+    }
+    .foodsArea__main__list {
+      padding: 0;
+    }
   }
 }
