@@ -1,11 +1,11 @@
-.stage__fes2018{
-  &.fes_2018_1130>div {
+.stage__fes2018 {
+  &.fes_2018_1130 > div {
     margin: 0 auto 16px;
   }
   &.sw-Card__Main{
-   p {
-    margin-bottom: 12px;
-  }
+    p {
+      margin-bottom: 12px;
+    }
   }
 
   &.sw-Tab > a {
@@ -17,8 +17,8 @@
     border-radius:2px;
   }
   &.sw-Tab.active > a {
-      background: $primary__green;
-      color:#FFF;
+    background: $primary__green;
+    color:#FFF;
   }
   &.ct-TimeTable__List{
     overflow-x: scroll;
@@ -83,7 +83,56 @@
     }
   }
 
-
-
 }
 
+
+@media screen and (min-width: 751px) {
+  .stageArea {
+    .ct-TimeTable {
+      &__Info {
+        padding: 0;
+      }
+      &__Corner {
+        padding: 12px 16px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 25px;
+      }
+      &__Guest {
+        width: 176px;
+        float: left;
+        padding-left: 16px;
+        padding-top: 21px;
+        margin: 0;
+        font-size: 15px;
+        line-height: 16px;
+      }
+      &__List {
+        float: left;
+        width: 560px;
+        padding-top: 21px;
+      }
+      &__Workshop {
+        clear: both;
+        h6 {
+          width: 170px;
+          padding-left: 16px;
+          float: left;
+        }
+      }
+    }
+
+    .sw-FlexMedia {
+      display: block;
+      &__Item {
+        width: 82px;
+        float: left;
+        margin-right: 32px;
+      }
+      &__Image {
+        width: 100%;
+      }
+    }
+  }
+}
