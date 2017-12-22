@@ -1,7 +1,8 @@
 .attractionDetail{
   &__discription {
+    margin-bottom: 40px;
     p {
-      border: solid 2px #8cc63f;
+      border: solid 2px #8476b5;
       border-radius: 30px;
       width: 60%;
       margin: 16px auto;
@@ -9,9 +10,6 @@
       text-align: center;
       font-weight: bold;
       color: #585858;
-    }
-    span {
-      color: #141414;
     }
   }
   &__person p {
@@ -24,6 +22,7 @@
       font-size: 13px;
       font-weight: bold;
       position: relative;
+      text-align: right;
     &:after {
         content: "";
         width: 8px;
@@ -40,6 +39,7 @@
   &__personDetail {
     margin: auto;
     width: 120px;
+    display: block;
     img {
       border-radius: 50%;
       opacity: 0.9;
@@ -86,12 +86,11 @@
 
 .attractionDetail{
   .attractionDetail{
-  &__logo {
-    margin-right: -16px;
-    margin-left: -16px;
-  }
   &__title {
     text-align: left;
+  }
+  &__content{
+    margin: 0px;
   }
   }
 }
