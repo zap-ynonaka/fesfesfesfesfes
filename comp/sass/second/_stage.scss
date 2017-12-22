@@ -81,20 +81,19 @@
     border-radius: 50%;
   }
   .comson {
-    color: #1e0111;
+    color:#1e0111;
     font-weight: 600;
     font-size: 1rem;
   }
-
-
-
-  @media screen and (max-width: 320px) {
-    &.ct-TimeTable__List{
-      width: 220px;
-    }
+  .tab-content {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-bottom: 70px;
   }
 
 }
+
+
 
 
 @media screen and (min-width: 751px) {
