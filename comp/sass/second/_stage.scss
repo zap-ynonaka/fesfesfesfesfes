@@ -26,7 +26,7 @@
   &.ct-TimeTable__Time {
     background: $primary__green;
     vertical-align: top;
-    padding-top: 12px;
+    padding: 12px 0px;
   }
   &.ct-TimeTable__TimeFrom{
     padding-bottom: 13px;
@@ -76,6 +76,16 @@
       font-size: 16px;
     }
   }
+  .sw-FlexMedia__Image img {
+    border-radius: 50%;
+  }
+  .comson {
+    color: #1e0111;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+
 
   @media screen and (max-width: 320px) {
     &.ct-TimeTable__List{
@@ -121,6 +131,10 @@
           float: left;
         }
       }
+    }
+
+    .comson {
+      padding: 12px 16px;
     }
 
     .sw-FlexMedia {
