@@ -1,9 +1,9 @@
 * {margin: 0;padding: 0;list-style-type: none;box-sizing: border-box;text-decoration: none;}
 
-// @font-face {
-//   font-family: 'din_l';
-//   src: url('DINbek-Light.ttf') format('ttf');
-// }
+@font-face {
+  font-family: 'din';
+  src: url('//uranaifes.com/wp-content/themes/uranaifes/css/font/DIN_Alternate_Bold.ttf') format('ttf');
+}
 // @font-face {
 //   font-family: 'din_l';
 //   src: url('DINbek-Light.ttf') format('ttf');
@@ -19,7 +19,7 @@
 
 
 body {
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: 'din' ,'Noto Sans Japanese', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #f4f4f4;
 }
