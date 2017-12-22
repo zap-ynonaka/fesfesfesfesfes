@@ -151,3 +151,17 @@
     }
   }
 }
+
+
+.stageArea {
+  .ct-TimeTable__Main {
+    table-layout: fixed;
+  }
+  .sw-FlexMedia {
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+}
