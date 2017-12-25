@@ -80,6 +80,7 @@
     display: block;
     color: #e4007f;
     font-weight: 700;
+    display: none;
   }
   &__menuDetail span:last-child {
     color: #8cc63f;
@@ -117,19 +118,37 @@
 
 @media screen and (min-width: 751px) {
   .foodsArea {
-    .foodsArea__main__map {
-       > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 16px;
-        > div {
-          width: 50%;
-        }
-      }
+    .foodsArea__main__map > div > div:first-child {
+      padding: 0 45px;
     }
     .foodsArea__main__list {
       padding: 0;
+      ul {
+        display: flex;
+        padding: 16px 0;
+        li {
+          width: auto;
+          float: none;
+          margin-bottom: 0;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        a:before {
+          display: none;
+        }
+      }
+    }
+    .foodsArea__main__menu {
+      padding-bottom: 24px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          width: 50%;
+        }
+      }
     }
   }
 }

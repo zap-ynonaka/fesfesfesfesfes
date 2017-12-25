@@ -88,6 +88,7 @@
     font-weight: 600;
     font-size: 1rem;
   }
+<<<<<<< Updated upstream
   .mcIcon:before{
     content: "MC";
     width: 24px;
@@ -105,12 +106,40 @@
   .tab-content {
     margin-right: -15px;
     margin-left: -15px;
+=======
+  &.tab-content {
+    margin-right: -16px;
+    margin-left: -16px;
+>>>>>>> Stashed changes
     padding-bottom: 70px;
   }
 
 }
 
-
+.stageArea {
+  .sw-FlexMedia__Item {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      pointer-events: none;
+      cursor: default;
+      > div {
+        margin-bottom: 12px;
+        padding: 0 8px;
+      }
+      > .stageDetail {
+        background-color: #eee;
+        color: #585858;
+        font-weight: 400;
+        font-size: 9px;
+        padding: 2px 6px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
 
 
 @media screen and (min-width: 751px) {
@@ -170,8 +199,16 @@
 
 
 .stageArea {
+  .ct-TimeTable__Guest {
+    visibility: hidden;
+  }
   .ct-TimeTable__Main {
     table-layout: fixed;
+  }
+  .ct-TimeTable__List {
+    height: 170px;
+    overflow: hidden;
+    padding-bottom: 16px;
   }
   .sw-FlexMedia {
     justify-content: flex-start;
@@ -179,5 +216,27 @@
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
+    padding-bottom: 17px;
+  }
+}
+
+
+
+
+.detail-Basic.memberDetail {
+  padding: 1px 16px 30px 16px;
+  background: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .stageArea {
+    .ct-TimeTable__List {
+      height: 140px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .sw-FlexMedia__Image {
+      width: 80px;
   }
 }
