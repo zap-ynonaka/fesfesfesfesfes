@@ -80,10 +80,27 @@
   .sw-FlexMedia__Image img {
     border-radius: 50%;
   }
+  .sw-FlexMedia__Item a>div{
+    position: relative;
+  }
   .comson {
     color:#1e0111;
     font-weight: 600;
     font-size: 1rem;
+  }
+  .mcIcon:before{
+    content: "MC";
+    width: 24px;
+    height: 24px;
+    background: #e4007f;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    border-radius: 50%;
+    color:#FFF;
+    font-size: 8px;
+    line-height: 24px;
+    text-align: center;
   }
   .tab-content {
     margin-right: -15px;
