@@ -33,14 +33,15 @@
     &.row_5 {height: 175px;}
     &.row_6 {height: 210px;}
     &.row_7 {height: 245px;}
+    &.row_8 {height: 280px;}
     a {
       display: block;
       width: 100%;
       height: 100%;
       padding: 12px;
     }
-    &.left {background-color: #f6fbe9;}
-    &.right {background-color: #fce5f2;}
+    &.left {background-color: #fce5f2;}
+    &.right {background-color: #e3f2f7;}
   }
   &__scheduleTime {
     color: #dcdcdc;
@@ -70,8 +71,8 @@
 
   thead {
     border-top: 2px solid #8ac832;font-size: 13px;line-height: 19px;
-    th:nth-of-type(2) {background-color: #f6fbe9;}
-    th:nth-of-type(3) {background-color: #fce5f2;}
+    th:nth-of-type(2) {background-color: #fce5f2;}
+    th:nth-of-type(3) {background-color: #e3f2f7;}
   }
 }
 
@@ -115,6 +116,9 @@
     }
     .workshopArea__tableRoom th {
       border: 1px solid #dcdcdc;
+      font-size: 14px;
+      line-height: 20px;
+      height: 55px;
       &:first-child {
         border: 0;
       }
