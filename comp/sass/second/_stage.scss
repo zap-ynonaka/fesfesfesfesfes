@@ -88,7 +88,6 @@
     font-weight: 600;
     font-size: 1rem;
   }
-<<<<<<< Updated upstream
   .mcIcon:before{
     content: "MC";
     width: 24px;
@@ -96,7 +95,7 @@
     background: #e4007f;
     position: absolute;
     top: 0px;
-    left: -10px;
+    left: 0px;
     border-radius: 50%;
     color:#FFF;
     font-size: 8px;
@@ -106,11 +105,6 @@
   .tab-content {
     margin-right: -15px;
     margin-left: -15px;
-=======
-  &.tab-content {
-    margin-right: -16px;
-    margin-left: -16px;
->>>>>>> Stashed changes
     padding-bottom: 70px;
   }
 
@@ -123,8 +117,6 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      pointer-events: none;
-      cursor: default;
       > div {
         margin-bottom: 12px;
         padding: 0 8px;
@@ -206,7 +198,7 @@
     table-layout: fixed;
   }
   .ct-TimeTable__List {
-    height: 170px;
+    height: 180px;
     overflow: hidden;
     padding-bottom: 16px;
   }
@@ -216,7 +208,7 @@
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
-    padding-bottom: 17px;
+    padding-bottom: 30px;
   }
 }
 

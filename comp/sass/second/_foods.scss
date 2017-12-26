@@ -1,3 +1,15 @@
+.foodsArea {
+  .foodsNote {
+    text-align: left;
+    line-height: 22px;
+    img {
+      width: 20px;
+      display: inline;
+      margin-right: 6px;
+    }
+  }
+}
+
 .foodsArea__main {
   h3 span {
     display: block;
@@ -18,20 +30,20 @@
       }
       a {
         display: block;
-        &:before {
-          content: "A";
-          width: 24px;
-          height: 24px;
-          background: #f39800;
-          border-radius: 50%;
-          position: absolute;
-          top: 4px;
-          left: 4px;
-          color: #FFF;
-          font-weight: bold;
-          text-align: center;
-          line-height: 24px;
-        }
+        // &:before {
+        //   content: "A";
+        //   width: 24px;
+        //   height: 24px;
+        //   background: #f39800;
+        //   border-radius: 50%;
+        //   position: absolute;
+        //   top: 4px;
+        //   left: 4px;
+        //   color: #FFF;
+        //   font-weight: bold;
+        //   text-align: center;
+        //   line-height: 24px;
+        // }
       }
     }
   }
@@ -104,7 +116,6 @@
     &__map {
       margin-right: -16px;
       margin-left: -16px;
-      padding-top: 24px;
       margin-bottom: 30px;
     }
     &__menu {
@@ -118,6 +129,9 @@
 
 @media screen and (min-width: 751px) {
   .foodsArea {
+    .second {
+      margin-bottom: 80px;
+    }
     .foodsArea__main__map > div > div:first-child {
       padding: 0 45px;
     }
@@ -142,6 +156,9 @@
     }
     .foodsArea__main__menu {
       padding-bottom: 24px;
+      h3 {
+        text-align: center;
+      }
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -149,6 +166,18 @@
           width: 50%;
         }
       }
+    }
+    section.fes_2018_1130 > div {
+      margin: 24px auto 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .foodsArea .foodsNote {
+    line-height: 52px;
+    img {
+      width: 50px;
     }
   }
 }
