@@ -69,6 +69,7 @@
   }
 
 
+  
   thead {
     border-top: 2px solid #8ac832;font-size: 13px;line-height: 19px;
     th:nth-of-type(2) {background-color: #fce5f2;}
@@ -76,10 +77,37 @@
   }
 }
 
+.workshopArea{
+  &__top{
+    &__logo {
+      width: 54%;
+      display: inline;
+      vertical-align: middle;
+      padding-right: 4px;
+    }
+    &__text {
+      color: #1e0111;
+    }
+    p img {
+      margin: 36px 0px;
+    }
+  }
+}
+
 
 
 @media screen and (min-width: 751px) {
   .workshopArea {
+    &__top p img {
+      width: 85%;
+      margin: 80px auto 47px;
+    }
+    &__top__text {
+      font-size: 16px;
+    }
+    &__top__logo {
+      width: 23%;
+    }
     .ct-MemberList__Date {
       display: none;
     }
