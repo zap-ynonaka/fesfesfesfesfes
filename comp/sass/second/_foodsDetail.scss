@@ -5,6 +5,7 @@
     &__shopLogo {
       width: 28%;
       margin: 10px auto;
+      border: 1px solid #e4007f;
     }
     &__foodsTitle {
       color: #1e0111;
@@ -15,23 +16,24 @@
         display: block;
         color: #e4007f;
         font-size: 11px;
+        display: none;
       }
     }
     &__discription {
       p {
-        border: solid 2px #8cc63f;
+        border: 2px solid #8cc63f ;
         border-radius: 30px;
-        width: 40%;
+        width: 70%;
         margin: 16px auto;
         padding: 2px;
         text-align: center;
-        font-weight: bold;
-        color: #585858;
+        font-weight: 700;
+        color: #585858 ;
       }
       a {
         text-decoration: underline;
         color: #8cc63f;
-        font-size: 13px;
+        font-size: 17px;
         font-weight: bold;
         position: relative;
         display: block;
@@ -62,19 +64,20 @@
           position: absolute;
           right: -12px;
           top: 30%;
-      }
+        }
       }
     }
     &__personDetail {
       margin: auto;
-      width: 120px;
-      display:block;
+      width: 150px;
+      display: block;
       img {
         border-radius: 50%;
-        opacity: 0.9;
-        border: solid 1px #eeeeee;
+        opacity: .9;
+        border: 1px solid #eee;
         height: 120px;
         width: 120px;
+        margin: auto;
       }
       span {
         display: block;
@@ -98,23 +101,15 @@
       list-style-type: disc;
       color: #767677;
     }
-    }
-  
-  
-  
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+}
+
+
+.foodsDetail{
   .foodsDetail{
-    .foodsDetail{
     &__foodsPic {
       margin-right: -16px;
       margin-left: -16px;
@@ -122,5 +117,17 @@
     &__title {
       text-align: left;
     }
-    }
   }
+}
+
+@media screen and (max-width: 750px) {
+  .foodsDetail__shopLogo {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 321px){
+  .foodsDetail__discription p {
+     width: 60%;
+  }
+}

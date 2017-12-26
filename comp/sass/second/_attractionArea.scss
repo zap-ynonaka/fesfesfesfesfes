@@ -76,27 +76,49 @@
     }
   }
   &__ticketSpace {
-    height: 21px;
+    height: 28px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     &.ticket:before {
       content: "";
       display: inline-block;
-      width: 30px;
-      height: 21px;
-      background-image: url(/wp-content/uploads/2017/11/ticketIcon.png);
+      width: 40px;
+      height: 28px;
+      background-image: url("/wp-content/uploads/2017/11/ticketIcon.png");
       background-size: cover;
       margin-right: 10px;
+    }
+    &.ticket.Free:before {
+      background-image: url("/wp-content/uploads/2017/12/uranai_free.png");
     }
     &.sheet_01:after {content: "× 1";}
     &.sheet_02:after {content: "× 2";}
     &.sheet_03:after {content: "× 3";}
+    &.sheet_04:after {content: "× 4";}
+    &.sheet_05:after {content: "× 5";}
   }
-  &__menuDetail{
+  &__menuDetail {
+    position: relative;
+    width: 100%;
     div {
       font-size: 14px;
       font-weight: bold;
       color: #1e0111;
+    }
+    .attractionArea__main__ticketSpace.coin_01 {
+      font-size: 12px;
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+      }
+      &:after {
+        position: absolute;
+        left: 50px;
+        bottom: -10px;
+        font-size: 14px;
+      }
     }
   }
   &__menuDetail div:first-child {
@@ -166,3 +188,22 @@
 }
 
 
+.attractionArea .swich {
+  display: none;
+}
+.attractionArea .swich:nth-child(2) {
+  display: block;
+  height: 34px;
+  padding-top: 4px;
+  &.coin_01 {
+    height: 34px;
+    align-items: flex-start;
+  }
+}
+
+.attractionDetail .swich {
+  display: none;
+}
+.attractionDetail .swich:last-child {
+  display: block;
+}

@@ -1,9 +1,11 @@
 @media screen and (min-width: 751px) {
 
 .foodsDetail{
+  padding-top: 1px;
   &__detail {
     background-color: #f4f4f4;
     padding: 1px 45px 50px 45px;
+    margin-bottom: 80px;
   }
   &__topContent {
     display: flex;
@@ -14,20 +16,11 @@
     background: #fff;
     padding: 0px 100px 70px 100px;
   }
-  &__shopLogo {
-    width: 25%;
-    margin:0;
-  }
   &__foodsPic {
     width: 62%;
   }
   &__foodsTitle {
     padding: 30px 0 0;
-  }
-  &__discription {
-  p{
-    width: 30%;
-  }
   }
   &__title {
     margin-top: 20px;
@@ -42,9 +35,6 @@
 
 .foodsDetail{
   .foodsDetail{
-    &__foodsPic {
-      margin-right: 0px;
-    }
     &__title {
       font-size: 18px;
     }
@@ -52,10 +42,22 @@
 }
 
 
-
-
-
-
-
+.foodsDetail {
+  .foodsDetail__topContent {
+    margin: 24px auto;
+    .foodsDetail__shopLogo{
+      width: 200px;
+      margin-right: 45px;
+    }
+  }
+  .foodsDetail__foodsPic {
+    flex: 1;
+    width: auto;
+    margin: 0;
+  }
+}
 
 }
+
+
+
