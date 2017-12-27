@@ -1,0 +1,62 @@
+@media screen and (min-width: 751px) {
+  
+  .goodsDetail{
+    padding-top: 1px;
+    &__detail {
+      background-color: #f4f4f4;
+      padding: 1px 45px 50px 45px;
+      margin-bottom: 80px;
+    }
+    &__topContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__content{
+      background: #fff;
+      padding: 0px 100px 70px 100px;
+    }
+    &__goodsPic {
+      width: 62%;
+    }
+    &__goodsTitle {
+      padding: 30px 0 0;
+    }
+    &__title {
+      margin-top: 20px;
+      border-top: 1px solid #d8d8d8;
+      padding: 20px 0px 0px;
+    }
+    &__notes ul li {
+      font-size: 14px;
+    }
+  }
+  
+  
+  .goodsDetail{
+    .goodsDetail__title {
+        font-size: 18px;
+    }
+  }
+  
+  
+  .goodsDetail {
+    .goodsDetail__topContent {
+      margin: 24px auto;
+      .goodsDetail__shopLogo{
+        width: 200px;
+        margin-right: 45px;
+      }
+    }
+    .goodsDetail__goodsPic {
+      flex: 1;
+      width: auto;
+      margin: 0;
+    }
+  }
+  
+  }
+  
+  
+  
+  
