@@ -4,9 +4,13 @@
     padding: 16px 0;
     margin: 0 auto;
   }
-
   &__goodsPic {
     margin: 0 -16px 24px;
+  }
+  &__topContent {
+    background-color: #f4f4f4;
+    margin-right: -16px;
+    margin-left: -16px;
   }
 
   &__goodsTitle {
@@ -32,6 +36,9 @@
       text-align: center;
       font-weight: 700;
       color: #585858;
+    }
+    span{
+      color: #141414;
     }
   }
   &__person {
@@ -61,6 +68,23 @@
           margin-bottom: 12px;
         }
       }
+    }
+  }
+  &__personDetail {
+    text-align: center;
+    div {
+      font-weight: bold;
+    }
+    span {
+      color: #585858;
+      font-size: 10px;
+      display: block;
+    }
+  }
+  .w-Card__Main{
+    img{
+      width: 65%;
+      margin: 0 auto;
     }
   }
   &__placeMap {
