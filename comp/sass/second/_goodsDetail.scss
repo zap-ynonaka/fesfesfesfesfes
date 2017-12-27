@@ -42,7 +42,6 @@
     }
   }
   &__person {
-    border-bottom: 1px solid #dcdcdc;
     padding-bottom: 24px;
     margin-bottom: 24px;
     .goodsDetail__title {
@@ -93,4 +92,10 @@
       margin-bottom: 4px;
     }
   }
+}
+
+//ピタットTVの画像を追加したのでそのCSS
+.ct-Map__img {
+  width: 65%;
+  margin: 0 auto;
 }
