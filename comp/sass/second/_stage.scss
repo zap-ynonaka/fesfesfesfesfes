@@ -95,7 +95,7 @@
     background: #e4007f;
     position: absolute;
     top: 0px;
-    left: -10px;
+    left: 0px;
     border-radius: 50%;
     color:#FFF;
     font-size: 8px;
@@ -110,7 +110,28 @@
 
 }
 
-
+.stageArea {
+  .sw-FlexMedia__Item {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      > div {
+        margin-bottom: 12px;
+        padding: 0 8px;
+      }
+      > .stageDetail {
+        background-color: #eee;
+        color: #585858;
+        font-weight: 400;
+        font-size: 9px;
+        padding: 2px 6px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
 
 
 @media screen and (min-width: 751px) {
@@ -165,13 +186,25 @@
         width: 100%;
       }
     }
+    .sw-FlexMedia__Text span {
+      display: block;
+      font-size: 1rem;
+    }
   }
 }
 
 
 .stageArea {
+  .ct-TimeTable__Guest {
+    visibility: hidden;
+  }
   .ct-TimeTable__Main {
     table-layout: fixed;
+  }
+  .ct-TimeTable__List {
+    height: 180px;
+    overflow: hidden;
+    padding-bottom: 16px;
   }
   .sw-FlexMedia {
     justify-content: flex-start;
@@ -179,5 +212,27 @@
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+
+.detail-Basic.memberDetail {
+  padding: 1px 16px 30px 16px;
+  background: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .stageArea {
+    .ct-TimeTable__List {
+      height: 140px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .sw-FlexMedia__Image {
+      width: 80px;
   }
 }
