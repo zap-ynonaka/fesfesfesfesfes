@@ -153,6 +153,9 @@
       &:after {display: none;}
     }
   }
+  &__kouyasanImage {
+    margin-bottom: 24px;
+  }
 
   .decoTop {margin-top: 0;margin-bottom: 10px;}
 
@@ -179,6 +182,11 @@
       &:last-child {
         display: none;
       }
+    }
+    &__kouyasanImage {
+      margin-left: -100px;
+      margin-right: -100px;
+      margin-bottom: 80px;
     }
   }
   .scheduleArea__group {
