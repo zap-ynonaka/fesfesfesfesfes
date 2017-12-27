@@ -1,4 +1,4 @@
-.attractionDetail{
+.attractionDetail {
   &__discription {
     margin-bottom: 40px;
     p {
@@ -23,7 +23,7 @@
       font-weight: bold;
       position: relative;
       text-align: right;
-    &:after {
+      &:after {
         content: "";
         width: 8px;
         height: 8px;
@@ -33,7 +33,7 @@
         position: absolute;
         right: -12px;
         top: 30%;
-    }
+      }
     }
   }
   &__personDetail {
@@ -65,14 +65,43 @@
   }
   &__notes ul {
     padding-left: 24px;
-  li {
-    list-style-type: disc;
-    color: #767677;
+    li {
+      list-style-type: disc;
+      color: #767677;
+    }
   }
+
+  .attractionDetail__discription {
+    .attractionArea__main__ticketSpace {
+      &.ticket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #8476b5;
+        width: 230px;
+        margin: 0 auto;
+        border-radius: 18px;
+        height: 36px;
+        font-size: 13px;
+        position: relative;
+        font-weight: 700;
+        &.coin_01 {
+          padding-right: 62px;
+        }
+      }
+      &.coin_01 {
+        &:before {
+          position: absolute;
+          left: 130px;
+        }
+        &:after {
+          position: absolute;
+          left: 175px;
+          font-weight: 700;
+        }
+      }
+    }
   }
-
-
-
 }
 
 
