@@ -72,28 +72,34 @@
       font-size: 14px;
       padding: 0 2px;
     }
-  span{
-    display:block;
-    color: $positiveColor__01;
-    text-decoration: underline;
-    padding: 1em 0em;
-    position: relative;
-    width: 29%;
-    margin: auto;
-    &:after {
-      content: "";
-      display: block;
-      width: 5px;
-      height: 5px;
-      border-top: 2px solid $positiveColor__01;
-      border-right: 2px solid $positiveColor__01;
-      transform: rotate(45deg);
-      position: absolute;
-      bottom: 1.5em;
-      right: 0;
+    span{
+      display:block;
+      color: $positiveColor__01;
+      text-decoration: underline;
+      padding: 1em 0em;
+      position: relative;
+      width: 29%;
       margin: auto;
+      &:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-top: 2px solid $positiveColor__01;
+        border-right: 2px solid $positiveColor__01;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: 1.5em;
+        right: 0;
+        margin: auto;
+      }
     }
-    }
+  }
+  .event__Image a {
+    display: block;
+    box-shadow: 0 0;
+    border: 0;
+    border-radius: 0;
   }
 
   @media screen and (max-width: 320px) {
@@ -103,6 +109,13 @@
     &__comment{
       font-size: 10px;
       padding: 12px 4px;
+    }
+  }
+
+  @media screen and (min-width: 751px) {
+    .event__Image {
+      width: 840px;
+      margin: 0 auto;
     }
   }
 
