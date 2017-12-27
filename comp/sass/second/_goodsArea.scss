@@ -2,6 +2,7 @@
   .goodsArea__listTitle {
     text-align: left;
     margin-bottom: 6px;
+    font-size: 15px;
   }
   .goodsArea__list ul {
     // margin-left: -16px;
@@ -48,6 +49,12 @@
           font-weight: 700;
         }
       }
+    }
+  }
+  @media screen and (min-width: 751px) {
+    .goodsArea__listTitle {
+      text-align: center;
+      font-size: 18px;
     }
   }
 }
