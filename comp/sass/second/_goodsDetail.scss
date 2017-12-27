@@ -1,11 +1,11 @@
 .goodsDetail {
   &__shopLogo {
     width: 28%;
-    padding: 16px 0;
-    margin: 0 auto;
+    margin: 10px auto;
+    border: 1px solid #e4007f;
   }
   &__goodsPic {
-    margin: 0 -16px 24px;
+    margin: 0 -16px 8px;
   }
   &__topContent {
     background-color: #f4f4f4;
@@ -31,7 +31,7 @@
       border: 2px solid #8cc63f;
       border-radius: 30px;
       width: 40%;
-      margin: 16px auto 0px;
+      margin: 10px auto 0px;
       padding: 2px;
       text-align: center;
       font-weight: 700;
@@ -42,7 +42,6 @@
     }
   }
   &__person {
-    border-bottom: 1px solid #dcdcdc;
     padding-bottom: 24px;
     margin-bottom: 24px;
     .goodsDetail__title {
@@ -93,4 +92,16 @@
       margin-bottom: 4px;
     }
   }
+}
+
+.goodsDetail {
+  .goodsDetail__title {
+      text-align: left;
+  }
+}
+
+//ピタットTVの画像を追加したのでそのCSS
+.ct-Map__img {
+  width: 65%;
+  margin: 0 auto;
 }
