@@ -1,45 +1,169 @@
 .diaryArea {
+&__diaryPic {
+
+}
+&__topContent {
+  background-color: #f4f4f4;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+&__diaryTitle {
+  color: #1e0111;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+&__diaryTitle span {
+  display: block;
+  color: #e4007f;
+  font-size: 11px;
+}
+&__discription {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #efefef;
+  p {
+    border: 2px solid #8cc63f;
+    border-radius: 30px;
+    width: 40%;
+    margin: 10px auto 0px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 700;
+    color: #585858;
+  }
+  span{
+    color: #141414;
+  }
+}
+&__detail {
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0px;
+    color: #8cc63f;
+  }
+  span{
+    color: #141414;
+  }
+}
+&__detailSecret {
+  div{
+    margin-bottom: 20px;
+    p {
+      width: 70px;
+      height: 22px;
+      border-radius: 2px;
+      background-color: #e4007f;
+      color: #FFF;
+      font-weight: bold;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+  }
+  h4 {
+    font-size: 15px;
+    color: #585858;
+    font-weight: bold;
+    margin: 6px 0px;
+  }
+  button {
+    box-shadow: 0 2px 0 0 #70a22f;
+    background: #8cc63f;
+    border-radius: 3px;
+    color: #FFF;
+    width: 100%;
+    font-size: 17px;
+    line-height: 50px;
+    border: none;
+    font-weight: 700;
+    margin: 20px 0px 50px;
+    a {
+      display: block;
+      font-weight: 700;
+      font-size: 17px;
+      color: #FFF;
+    }
+  }
+}
+  &__detailSecret h4:first-child {
+    font-size: 17px;
+    margin: 26px 0px 12px 0px;
+    color: #8cc63f;
+  }
   &__person {
-    border-bottom: 1px solid #dcdcdc;
     padding-bottom: 24px;
     margin-bottom: 24px;
-    .diaryArea__title {
+    .diaryDetail__title {
       text-align: left;
       margin-bottom: 6px;
     }
-    ul {
-      overflow: hidden;
+
+    // ul {
+    //   display: flex;
+    //   justify-content: flex-start;
+    // }
+
+    // li {
+    //   width: 120px;
+    //   margin-right: 32px;
+    //   a {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     img {
+    //       border-radius: 50%;
+    //       margin-bottom: 12px;
+    //     }
+    //   }
+    // }
+  }
+  &__personDetail {
+    text-align: center;
+    div {
+      font-weight: bold;
     }
-    li {
-      width: 30%;
-      margin-right: 5%;
-      margin-bottom: 12px;
-      float: left;
-      &:nth-of-type(3n) {
-        margin-right: 0;
-      }
-      a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        img {
-          border-radius: 50%;
-          margin-bottom: 12px
-        }
-      }
+    span {
+      color: #585858;
+      font-size: 10px;
+      display: block;
     }
   }
+  &__placeMap {
+    margin: 46px 0px;
+  h3 {
+    text-align: left;
+  }
+  // .diaryDetail__title {
+  //   text-align: left;
+  //   margin-bottom: 4px;
+  // }
+  // }
+  // .diaryDetail__title {
+  //   text-align: left;
+  // }
+  }
+
 
   &__monthLink {
+    h3 {
+    text-align: left;
+    }
     ul {
       overflow: hidden;
       border-top: 1px solid #dcdcdc;
+      margin-right: -16px;
+      margin-left: -16px;
     }
     li {
       width: 50%;
       float: left;
       border-bottom: 1px solid #dcdcdc;
+      background: #f8f8f8;
       &:nth-of-type(2n) {
         border-left: 1px solid #dcdcdc;
       }
@@ -47,21 +171,54 @@
         padding: 12px 16px;
         display: block;
         position: relative;
+        font-size: 12px;
+        font-weight: bold;
         &:after {
           content: "";
           display: block;
-          width: 12px;
-          height: 12px;
-          border-top: 2px solid #dcdcdc;
-          border-right: 2px solid #dcdcdc;
+          width: 6px;
+          height: 6px;
+          border-top: 2px solid #141414;
+          border-right: 2px solid #141414;
           position: absolute;
           top: 0;
           bottom: 0;
-          right: 16px;
+          right: 10px;
           margin: auto;
           transform: rotate(45deg);
         }
       }
     }
   }
+  // &__person {
+  //   border-bottom: 1px solid #dcdcdc;
+  //   padding-bottom: 24px;
+  //   margin-bottom: 24px;
+  //   .diaryArea__title {
+  //     text-align: left;
+  //     margin-bottom: 6px;
+  //   }
+  //   ul {
+  //     overflow: hidden;
+  //   }
+  //   li {
+  //     width: 30%;
+  //     margin-right: 5%;
+  //     margin-bottom: 12px;
+  //     float: left;
+  //     &:nth-of-type(3n) {
+  //       margin-right: 0;
+  //     }
+  //     a {
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: center;
+  //       justify-content: center;
+  //       img {
+  //         border-radius: 50%;
+  //         margin-bottom: 12px
+  //       }
+  //     }
+  //   }
+  // }
 }

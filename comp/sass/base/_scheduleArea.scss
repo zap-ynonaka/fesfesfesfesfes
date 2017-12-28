@@ -140,7 +140,7 @@
       letter-spacing: 1.3px;
       line-height: 2;
       padding-top: 7px;
-      margin: 4px auto 42px;
+      margin: 4px auto 21px;
       span {
         font-size: 10px;
         display: block;
@@ -169,6 +169,22 @@
     }
   }
 
+}
+
+.scheduleArea__btn{
+  &TopText {
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  &FooterText {
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 42px;
+    color: #e50f7e;
+  }
 }
 
 @media screen and (min-width: 751px) {
@@ -201,10 +217,11 @@
   .scheduleArea__registrationArea {
     font-size: 20px;
   }
+  .scheduleArea__btnTopText,
+  .scheduleArea__btnFooterText {
+    font-size: 24px;
+  }
 }
-
-
-
 
 .scheduleArea__guide:nth-of-type(1) li:nth-child(2) a {
   pointer-events: none;
@@ -214,3 +231,5 @@
 .scheduleArea__guide:nth-of-type(1) li:nth-child(2) a:after {
   display: none;
 }
+
+
