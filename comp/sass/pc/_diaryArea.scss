@@ -1,0 +1,104 @@
+@media screen and (min-width: 751px) {
+  
+  .diaryArea{
+    padding-top: 1px;
+    &__detail {
+      background-color: #f4f4f4;
+      padding: 1px 45px 50px 45px;
+      margin-bottom: 80px;
+      h4{
+        font-size: 22px;
+      }
+    }
+    &__detailSecret h4:first-child {
+      font-size: 20px;
+    }
+    &__detailSecret h4 {
+      font-size: 18px;
+    }
+    &__detailSecret div p {
+      font-size: 17px;
+      width: 80px;
+      height:26px;
+      margin-right: 10px;
+    }
+    &__detailSecret__btn {
+      text-align: center;
+      padding-bottom: 40px;
+      padding-top: 10px;
+    }
+    &__detailSecret__btn button {
+      width: 446px;
+      line-height: 62px;
+      margin: 0 auto;
+    }
+    &__topContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__content{
+      background: #fff;
+      padding: 0px 100px 70px 100px;
+    }
+    &__diaryPic {
+      width: 62%;
+    }
+    &__diaryTitle {
+      padding: 30px 0 0;
+    }
+    &__title {
+      margin-top: 20px;
+      border-top: 1px solid #d8d8d8;
+      padding: 20px 0px 0px;
+    }
+    &__discription p {
+      font-size: 20px;
+    }
+    &__discription h3 {
+      text-align: left;
+      margin-bottom: 12px;
+    }
+    &__notes ul li {
+      font-size: 14px;
+    }
+    &__monthLink ul {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
+  
+  
+  .diaryArea{
+    .diaryArea{
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+  
+  
+  .diaryArea {
+    .diaryArea__topContent {
+      margin: 24px auto;
+    }
+    .diaryArea__diaryPic {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+
+  div.diaryArea__detailSecret__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  
+  }
+
+
+  
+  
+  
+  
