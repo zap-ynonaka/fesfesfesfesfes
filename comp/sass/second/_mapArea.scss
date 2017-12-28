@@ -1,0 +1,59 @@
+.mapArea__main__floorMap {
+  margin: 0 -16px;
+}
+.mapArea__main__kouyasan {
+  margin: 0 -16px 20px;
+}
+.mapArea__main__menu {
+  margin: 0 -16px;
+}
+.mapArea__main__menu li {
+  border-bottom: 1px dotted #dcdcdc;
+}
+.mapArea__main__menu a {
+  align-items: center;
+  display: flex;
+  padding: 16px;
+}
+.mapArea__main__menu a > img {
+  height: auto;
+  width: 80px;
+}
+.mapArea__main__menu a > div {
+  flex: 1;
+  margin: 0 16px;
+}
+.mapArea__main__menu a > div > h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+.mapArea__main__menu li:nth-of-type(2) a > div > h3,
+.mapArea__main__menu li:nth-of-type(7) a > div > h3 {
+  color: #8476b5;
+}
+.mapArea__main__menu a > div > p {
+  margin: 0;
+  font-size: 15px;
+}
+.mapArea__main__menu a::after {
+  background: url(/wp-content/uploads/2017/11/arrow_green.png) no-repeat center center / contain;
+  content: '';
+  display: block;
+  height: 14px;
+  width: 14px;
+}
+@media screen and (min-width: 751px) {
+.mapArea__main__menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mapArea__main__menu li {
+  width: 50%;
+}
+
+.mapArea > div.second {
+  padding-bottom: 80px;
+}
+}

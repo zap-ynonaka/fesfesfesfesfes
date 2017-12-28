@@ -5,8 +5,7 @@
     font-size: 15px;
   }
   .goodsArea__list ul {
-    // margin-left: -16px;
-    // margin-right: -16px;
+    overflow: hidden;
   }
   .goodsArea__listItem {
     float: left;

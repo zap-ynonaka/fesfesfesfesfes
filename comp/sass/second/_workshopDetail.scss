@@ -9,18 +9,21 @@
   &.ws-Item_Main {
     display: flex;
     padding-top: 32px;
+    padding-bottom: 10px;
   }
   &.ws-Item_ImageText {
-    text-align: center;
     color: #e4007f;
     font-size: 13px;
     font-weight: 700;
+    padding: 5px 0px;
+    text-align:left;
     span {
       color: #de0000;
     }
   }
   &.ws-Item_Image {
     width: 40%;
+    display: none;
     img {
       width: 100%;
       height: auto;
@@ -41,7 +44,7 @@
   }
   &.ws-Item_Text {
     flex: 1;
-    padding-left: 8px;
+    padding-left: 0px;
   }
   &.ws-Item_Text>h3 {
     font-size: 14px;
@@ -265,12 +268,13 @@
       width: 250px;
     }
     &.ws-Item_ImageText {
+      text-align:left;
       font-size: 18px;
       margin-top: 8px;
     }
-    &.ws-Item_Text {
-      padding-left: 32px;
-    }
+    // &.ws-Item_Text {
+    //   padding-left: 32px;
+    // }
     &.ws-Item_Cate li {
       font-size: 14px;
       line-height: 20px;
@@ -291,14 +295,23 @@
       margin-top: 8px;
     }
     &.ws-Detail {
-      margin-left: 280px;
+      margin: 0;
     }
     &.ws-Item {
       padding-bottom: 32px;
     }
+    &__detail {
+      background-color: #f4f4f4;
+      padding: 45px 50px;
+      margin-bottom: 80px;
+    }
+    &__content{
+      background: #fff;
+      padding: 0 100px 70px;
+    }
   }
   &.ws-map_btn {
-      width: 600px;
-      margin: 0 auto 80px;
+      width: 100%;
+      margin:0 auto 60px;
   }
 }

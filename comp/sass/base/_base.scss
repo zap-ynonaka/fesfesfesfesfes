@@ -350,3 +350,9 @@ section.news {
     padding-bottom: 1px;
   }
 }
+
+@media screen and (min-width: 640px) {
+  .breadcrumb {
+    display: none;
+  }
+}
