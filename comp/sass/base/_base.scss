@@ -1,21 +1,10 @@
 * {margin: 0;padding: 0;list-style-type: none;box-sizing: border-box;text-decoration: none;}
 
 @font-face {
-  font-family: 'din';
-  src: url('//uranaifes.com/wp-content/themes/uranaifes/css/font/DIN_Alternate_Bold.ttf') format('ttf');
+  font-family: DIN;
+  font-weight: 600;
+  src: local('DINAlternate-Bold'),local('din'),url(/fonts/din1451alt/din1451alt.woff2) format('woff2'),url(/fonts/din1451alt/din1451alt.woff) format('woff')
 }
-// @font-face {
-//   font-family: 'din_l';
-//   src: url('DINbek-Light.ttf') format('ttf');
-// }
-// @font-face {
-//   font-family: 'din_l';
-//   src: url('DINbek-Light.ttf') format('ttf');
-// }
-// @font-face {
-//   font-family: 'din_l';
-//   src: url('DINbek-Light.ttf') format('ttf');
-// }
 
 
 body {
