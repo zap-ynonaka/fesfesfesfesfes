@@ -206,7 +206,7 @@ nav.deviceSP {
       }
       nav {
         position: initial;
-        padding: 0 0 0 80px;
+        padding: 0 0 0 0px;
         overflow: visible;
         ul {
           display: flex;
@@ -309,16 +309,3 @@ nav.deviceSP {
   }
 }
 
-
-
-.secondBase_fes_2018.deviceSP > nav > ul > li {
-  &:nth-of-type(3) {
-    display: none;
-  }
-}
-
-.secondBase_fes_2018.devicePC nav > ul > li {
-  &:nth-of-type(3) {
-    display: none;
-  }
-}

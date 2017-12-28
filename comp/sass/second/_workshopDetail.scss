@@ -21,6 +21,7 @@
   }
   &.ws-Item_Image {
     width: 40%;
+    display: none;
     img {
       width: 100%;
       height: auto;
@@ -291,7 +292,7 @@
       margin-top: 8px;
     }
     &.ws-Detail {
-      margin-left: 280px;
+      margin: 16px 140px 0;
     }
     &.ws-Item {
       padding-bottom: 32px;
