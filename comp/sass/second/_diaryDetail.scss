@@ -355,4 +355,59 @@ section.pattern_01.diaryDetail {
     }
   }
 
+
+
+  .diaryDetail__links {
+    padding: 16px;
+    background-color: #fff;
+    margin: 0 -16px;
+    ul {
+      overflow: hidden;
+      background-color: #f4f4f4;
+      margin: 0 -16px;
+    }
+    li {
+      float: left;
+      width: 50%;
+      a {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 32px 0 16px;
+        height: 45px;
+        font-size: 12px;
+        position: relative;
+        border-top: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        &:after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 10px;
+          background-image: url("/wp-content/uploads/2017/12/diary_links_arrow.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 12px;
+          margin: auto;
+        }
+      }
+    }
+    .goodsDetail__title {
+      margin-bottom: 0;
+      padding-bottom: 8px;
+      background-color: #fff;
+    }
+  }
+  .workshopTable__map {
+    background-color: #fff;
+    padding: 30px 0;
+    margin: 0 -16px -21px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
