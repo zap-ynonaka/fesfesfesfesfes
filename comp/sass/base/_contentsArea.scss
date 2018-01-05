@@ -24,7 +24,7 @@
   &__description {
     font-size: 18px;
     font-weight: bold;
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
   &__image{
     position:relative;
@@ -58,7 +58,7 @@
     font-size: 24px;
     margin: auto;
     padding: 0.4em 0em;
-    background-color: #e4007f;
+    background-color: $secondary__pink;
   }
   &__comment{
     padding:1em;

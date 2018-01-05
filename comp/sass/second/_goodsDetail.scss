@@ -2,7 +2,7 @@
   &__shopLogo {
     width: 28%;
     margin: 10px auto;
-    border: 1px solid #e4007f;
+    border: 1px solid $secondary__pink;
   }
   &__goodsPic {
     margin: 0 -16px 8px;
@@ -18,17 +18,17 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-  }
-
-  &__goodsTitle span {
-    display: block;
-    color: #e4007f;
-    font-size: 11px;
+    span {
+      display: block;
+      color: $secondary__pink;
+      font-size: 11px;
+      visibility: hidden;
+    }
   }
   &__discription {
     margin-bottom: 24px;
     p {
-      border: 2px solid #8cc63f;
+      border: 2px solid $positiveColor__01;
       border-radius: 30px;
       width: 40%;
       margin: 10px auto 0px;
@@ -94,6 +94,17 @@
   }
   .goodsDetail__title {
     text-align: left;
+  }
+  &__content form {
+    * {
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      appearance: none;
+    }
   }
 }
 

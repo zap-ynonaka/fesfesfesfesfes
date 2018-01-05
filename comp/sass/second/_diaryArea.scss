@@ -17,7 +17,7 @@
 
 &__diaryTitle span {
   display: block;
-  color: #e4007f;
+  color: $secondary__pink;
   font-size: 11px;
 }
 &__discription {
@@ -25,7 +25,7 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #d8d8d8;
   p {
-    border: 2px solid #8cc63f;
+    border: 2px solid $positiveColor__01;
     border-radius: 30px;
     width: 40%;
     margin: 10px auto 0px;
@@ -43,7 +43,7 @@
     font-size: 20px;
     font-weight: 700;
     margin: 20px 0px;
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
   span{
     color: #141414;
@@ -56,7 +56,7 @@
       width: 70px;
       height: 22px;
       border-radius: 2px;
-      background-color: #e4007f;
+      background-color: $secondary__pink;
       color: #FFF;
       font-weight: bold;
       text-align: center;
@@ -72,7 +72,7 @@
   }
   button {
     box-shadow: 0 2px 0 0 #70a22f;
-    background: #8cc63f;
+    background: $positiveColor__01;
     border-radius: 3px;
     color: #FFF;
     width: 100%;
@@ -92,7 +92,7 @@
   &__detailSecret h4:first-child {
     font-size: 17px;
     margin: 26px 0px 12px 0px;
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
   &__person {
     padding-bottom: 24px;

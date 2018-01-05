@@ -5,7 +5,7 @@
     &__shopLogo {
       width: 28%;
       margin: 10px auto;
-      border: 1px solid #e4007f;
+      border: 1px solid $secondary__pink;
     }
     &__foodsTitle {
       color: #1e0111;
@@ -14,14 +14,14 @@
       text-align: center;
       span {
         display: block;
-        color: #e4007f;
+        color: $secondary__pink;
         font-size: 11px;
         display: none;
       }
     }
     &__discription {
       p {
-        border: 2px solid #8cc63f ;
+        border: 2px solid $positiveColor__01 ;
         border-radius: 30px;
         width: 70%;
         margin: 16px auto;
@@ -32,7 +32,7 @@
       }
       a {
         text-decoration: underline;
-        color: #8cc63f;
+        color: $positiveColor__01;
         font-size: 17px;
         font-weight: bold;
         position: relative;
@@ -49,7 +49,7 @@
       margin-top: 20px;
       a {
         text-decoration: underline;
-        color: #8cc63f;
+        color: $positiveColor__01;
         font-size: 13px;
         font-weight: bold;
         position: relative;
@@ -58,8 +58,8 @@
           content: "";
           width: 8px;
           height: 8px;
-          border-top: solid 2px #8cc63f;
-          border-right: solid 2px #8cc63f;
+          border-top: solid 2px $positiveColor__01;
+          border-right: solid 2px $positiveColor__01;
           transform: rotate(45deg);
           position: absolute;
           right: -12px;

@@ -12,7 +12,7 @@
     padding-bottom: 10px;
   }
   &.ws-Item_ImageText {
-    color: #e4007f;
+    color: $secondary__pink;
     font-size: 13px;
     font-weight: 700;
     padding: 5px 0px;
@@ -68,7 +68,7 @@
   }
   &.ws-Item_TextPrice>span {
     font-weight: 700;
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
   &.ws-Detail {
     border-top: 1px dotted #dcdcdc;
@@ -123,7 +123,7 @@
   }
   &.ws-Item_TextPrice>span {
     font-weight: 700;
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
 
   &li.sw-Tab {
@@ -153,7 +153,7 @@
   }
 
   &.sw-Tab.active>a {
-    background: #8cc63f;
+    background: $positiveColor__01;
     color: #FFF
   }
 
@@ -162,7 +162,7 @@
   }
 
   &.ct-TimeTable__Time {
-    background: #8cc63f;
+    background: $positiveColor__01;
     vertical-align: top;
     padding-top: 12px
   }
@@ -183,7 +183,7 @@
   }
 
   &.ct-TimeTable__Info {
-    border: 1px solid #8cc63f
+    border: 1px solid $positiveColor__01
   }
 
   &.ct-TimeTable__Corner {
@@ -191,7 +191,7 @@
   }
 
   &.ct-TimeTable__Guest {
-    color: #8cc63f
+    color: $positiveColor__01
   }
 
   &.ct-TimeTable__Workshop {
@@ -200,7 +200,7 @@
 
   &.ct-TimeTable__Workshop h6 {
     font-size: 14px;
-    color: #8cc63f;
+    color: $positiveColor__01;
     font-weight: bold
   }
 
@@ -221,10 +221,9 @@
   }
 
   &.ct-TimeTable__BottomBtn div {
-    background-color: #e4007f;
+    background-color: $secondary__pink;
     padding: 10px;
     border-radius: 3px;
-    -webkit-box-shadow: 0 2px 0 0 #b81d65;
     box-shadow: 0 2px 0 0 #b81d65
   }
 
@@ -240,7 +239,7 @@
       display: block;
       width: 100%;
       text-align: center;
-      background-color: #8cc63f;
+      background-color: $positiveColor__01;
       padding: 10px 0px;
       color: #FFF;
       font-weight: bold;

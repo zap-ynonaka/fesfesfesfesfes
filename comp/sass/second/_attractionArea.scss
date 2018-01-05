@@ -10,7 +10,7 @@
     justify-content: space-between;
     li {
       width: 49%;
-      border: solid 1px #e4007f;
+      border: solid 1px $secondary__pink;
       margin-bottom: 16px;
       a {
           display: block;
@@ -61,8 +61,8 @@
         content: "";
         width: 12px;
         height: 12px;
-        border-top: solid 2px #8cc63f;
-        border-right: solid 2px #8cc63f;
+        border-top: solid 2px $positiveColor__01;
+        border-right: solid 2px $positiveColor__01;
         transform: rotate(45deg);
         position: absolute;
         right: 1em;
@@ -130,7 +130,7 @@
     color: #585858;
   }
   &__menuDetail span {
-    color: #8cc63f;
+    color: $positiveColor__01;
   }
   &__placeMap p {
     padding: 0px 20px;
