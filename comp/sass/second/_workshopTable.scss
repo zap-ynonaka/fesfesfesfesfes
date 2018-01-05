@@ -21,7 +21,7 @@
       height: 35px;
     }
     @media screen and (min-width: 751px) {
-      height: 45px;
+      height: 70px;
     }
     &:nth-of-type(4n) td {
       border-bottom: 1px solid #dcdcdc;
@@ -44,13 +44,13 @@
       &.row_8 {height: 245px;}
     }
     @media screen and (min-width: 751px) {
-      &.row_2 a {height: 90px;}
-      &.row_3 a {height: 135px;}
-      &.row_4 a {height: 180px;}
-      &.row_5 a {height: 225px;}
-      &.row_6 a {height: 270px;}
-      &.row_7 a {height: 315px;}
-      &.row_8 a {height: 360px;}
+      &.row_2 a {height: 140px;}
+      &.row_3 a {height: 210px;}
+      &.row_4 a {height: 280px;}
+      &.row_5 a {height: 350px;}
+      &.row_6 a {height: 420px;}
+      &.row_7 a {height: 490px;}
+      &.row_8 a {height: 560px;}
     }
     a {
       display: block;

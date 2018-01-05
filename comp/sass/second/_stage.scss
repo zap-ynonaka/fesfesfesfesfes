@@ -64,7 +64,7 @@
       color: #1e0111;
     }
     div{
-      background-color: #e4007f;
+      background-color: $secondary__pink;
       padding: 10px;
       border-radius: 3px;
       box-shadow: 0 2px 0 0 #b81d65;
@@ -92,7 +92,7 @@
     content: "MC";
     width: 24px;
     height: 24px;
-    background: #e4007f;
+    background: $secondary__pink;
     position: absolute;
     top: 0px;
     left: 0px;
